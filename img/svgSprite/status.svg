@@ -1,0 +1,5 @@
+<svg id="status" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="8" viewBox="0 0 11 8">
+  <g clip-path="url(#clip-path)">
+    <path d="M10.707.293a1,1,0,0,1,0,1.414l-6,6a1,1,0,0,1-1.414,0l-3-3A1,1,0,0,1,1.707,3.293L4,5.586,9.293.293a1,1,0,0,1,1.414,0" fill="#66c430" fill-rule="evenodd"/>
+  </g>
+</svg>

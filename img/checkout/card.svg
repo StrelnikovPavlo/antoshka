@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="28" viewBox="0 0 43 28">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_26509" data-name="Path 26509" d="M2,0H39a2,2,0,0,1,2,2V24a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z" transform="translate(-0.231 0.047)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_2525" data-name="Rectangle 2525" width="9.745" height="7.453" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_2527" data-name="Rectangle 2527" width="35.197" height="1.705" rx="0.853" fill="#b7b7dc"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rectangle_2529" data-name="Rectangle 2529" width="12" height="1.705" rx="0.853" fill="#b7b7dc"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <rect id="Rectangle_2532" data-name="Rectangle 2532" width="41" height="27" transform="translate(0.412 -0.309)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_3763" data-name="Group 3763" transform="translate(-0.412 -0.69)">
+    <g id="Group_3752" data-name="Group 3752" transform="translate(-4.357 -8.357)">
+      <g id="Mask_Group_12" data-name="Mask Group 12" transform="translate(5 9)" clip-path="url(#clip-path)">
+        <g id="Path_26508" data-name="Path 26508" transform="translate(-0.231 0.047)" fill="#f4f9ff">
+          <path d="M 39 25.5 L 2 25.5 C 1.172899961471558 25.5 0.5 24.82710075378418 0.5 24 L 0.5 2 C 0.5 1.172899961471558 1.172899961471558 0.5 2 0.5 L 39 0.5 C 39.82709884643555 0.5 40.5 1.172899961471558 40.5 2 L 40.5 24 C 40.5 24.82710075378418 39.82709884643555 25.5 39 25.5 Z" stroke="none"/>
+          <path d="M 2 1 C 1.448600769042969 1 1 1.448600769042969 1 2 L 1 24 C 1 24.55139923095703 1.448600769042969 25 2 25 L 39 25 C 39.55139923095703 25 40 24.55139923095703 40 24 L 40 2 C 40 1.448600769042969 39.55139923095703 1 39 1 L 2 1 M 2 0 L 39 0 C 40.10456848144531 0 41 0.8954296112060547 41 2 L 41 24 C 41 25.10457038879395 40.10456848144531 26 39 26 L 2 26 C 0.8954315185546875 26 0 25.10457038879395 0 24 L 0 2 C 0 0.8954296112060547 0.8954315185546875 0 2 0 Z" stroke="none" fill="#b7b7dc"/>
+        </g>
+        <rect id="Rectangle_2521" data-name="Rectangle 2521" width="41" height="26" rx="2" transform="translate(-0.231 0.047)" fill="none" stroke="#cbcbcb" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <rect id="Rectangle_2533" data-name="Rectangle 2533" width="39" height="6" transform="translate(5.769 13.047)" fill="#b7b7dc"/>
+    </g>
+    <g id="Group_3754" data-name="Group 3754" transform="translate(27.539 10.729)">
+      <g id="Group_3753" data-name="Group 3753" clip-path="url(#clip-path-2)">
+        <rect id="Rectangle_2523" data-name="Rectangle 2523" width="9.745" height="7.453" transform="translate(0 0)" fill="#fff"/>
+        <rect id="Rectangle_2524" data-name="Rectangle 2524" width="9.745" height="7.453" transform="translate(0 0)" fill="none" stroke="#d0021b" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="Group_3756" data-name="Group 3756" transform="translate(3.314 18.183)">
+      <g id="Group_3755" data-name="Group 3755" clip-path="url(#clip-path-3)">
+        <rect id="Rectangle_2526" data-name="Rectangle 2526" width="38.382" height="4.922" transform="translate(-1.609 -1.609)" fill="#b7b7dc"/>
+      </g>
+    </g>
+    <g id="Group_3758" data-name="Group 3758" transform="translate(3.314 21.494)">
+      <g id="Group_3757" data-name="Group 3757" clip-path="url(#clip-path-4)">
+        <rect id="Rectangle_2528" data-name="Rectangle 2528" width="15.218" height="4.922" transform="translate(-1.609 -1.609)" fill="#b7b7dc"/>
+      </g>
+    </g>
+    <g id="Group_3760" data-name="Group 3760" transform="translate(26.478 21.494)">
+      <g id="Group_3759" data-name="Group 3759" clip-path="url(#clip-path-4)">
+        <rect id="Rectangle_2530" data-name="Rectangle 2530" width="15.218" height="4.922" transform="translate(-1.609 -1.609)" fill="#b7b7dc"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Люмісвіт</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="програма бонусів Люмісвіт">
+    <script defer="defer" src="js/jquery.min.js?_v=20230829134847"></script>
+    <script defer="defer" src="js/slick.min.js?_v=20230829134847"></script>
+    <script defer="defer" src="js/slider_product.min.js?_v=20230829134847"></script>
+    <script defer="defer" src="js/select2.min.js?_v=20230829134847"></script>
+    <script defer="defer" src="js/bootstrap.min.js?_v=20230829134847"></script>
+    <script defer="defer" src="js/header.min.js?_v=20230829134847"></script>
+    <script defer="defer" src="js/footer.min.js?_v=20230829134847"></script>
+    <script defer="defer" src="js/product.min.js?_v=20230829134847"></script>
+    <script defer="defer" src="js/popup.min.js?_v=20230829134847"></script>
+    <script defer="defer" src="js/functions.min.js?_v=20230829134847"></script>
+    <script defer="defer" src="js/delivery.min.js?_v=20230829134847"></script>
+    <link rel="stylesheet" href="css/delivery.min.css?_v=20230829134847">
+    <link rel="preload" as="image" href="img/buttontotop/uph.svg">
+    <link rel="stylesheet" href="css/bonus.min.css?_v=20230829134847">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+	<div class="header__top">
+		<div class="container-xxl">
+			<div class="d-flex align-items-center justify-content-between column-gap-4">
+				<a data-popup="location" data-location=".header__location" data-da=".menu-nav-bar__city, 1199" href="#" class="d-flex align-items-center header__location">
+					<span>Киев</span>
+				</a>
+				<nav class="header__menu menu-header">
+					<ul class="d-flex align-items-center menu-header__list">
+						<li class="menu-header__item">
+							<a href="#" class="d-flex align-items-center menu-header__link">
+								Связаться
+								<svg width="9" height="6" class="arrow">
+									<use xlink:href="img/svg/icons.svg#arrow"></use>
+								</svg>
+							</a>
+							<ul class="dropdown-menu-header menu-header__dropdown">
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										<svg width="20" height="20" class="messenger">
+											<use xlink:href="img/svg/icons.svg#messenger"></use>
+										</svg>
+										Messenger							 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										<svg width="20" height="18" class="mail">
+											<use xlink:href="img/svg/icons.svg#mail"></use>
+										</svg>
+										Отправить письмо								 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="tel:0800306063" class="d-flex align-items-center column-gap-3 phone">
+										<svg width="20" height="18" class="phone">
+											<use xlink:href="img/svg/icons.svg#phone"></use>
+										</svg>
+										0 (800) 306-063										 
+									</a>
+									<p>Телефон горячей линии Ежедневно 9:00-21:00 Бесплатно по Украине</p>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-header__item">
+							<a href="#" class="d-flex align-items-center menu-header__link">
+								Покупателям
+								<svg width="9" height="6" class="arrow">
+									<use xlink:href="img/svg/icons.svg#arrow"></use>
+								</svg>
+							</a>
+							<ul class="dropdown-menu-header menu-header__dropdown dropdown-menu-header__wide">
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Доставка и оплата							 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Гарантия и возврат						 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Бонусы
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Акции
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Статьи и обзоры
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Новости и события
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-header__item">
+							<a href="#" class="d-flex align-items-center menu-header__link">
+								Компания
+								<svg width="9" height="6" class="arrow">
+									<use xlink:href="img/svg/icons.svg#arrow"></use>
+								</svg>
+							</a>
+							<ul class="dropdown-menu-header menu-header__dropdown dropdown-menu-header__wide">
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										О нас						 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Контакты						 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Сотрудничество
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Вакансии
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-header__item">
+							<a href="#" class="d-flex align-items-center menu-header__link">
+								Услуги
+								<svg width="9" height="6" class="arrow">
+									<use xlink:href="img/svg/icons.svg#arrow"></use>
+								</svg>
+							</a>
+							<ul class="dropdown-menu-header menu-header__dropdown dropdown-menu-header__wide">
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Подбор подарка						 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Парикмахерская						 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Школа мам
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="select">
+					<button class="select__button" type="button">
+						<span>UA</span>
+						<svg width="9" height="6" class="arrow">
+							<use xlink:href="img/svg/icons.svg#arrow"></use>
+						</svg>
+					</button>
+					<div class="select__wrapper">
+						<ul class="select__list">
+							<li class="language select__item choose" data-select="ru">
+								<a href="#">UA</a>
+							</li>
+							<li class="language select__item" data-select="uk"><a href="#">RU</a></li>
+						</ul>
+						<input type="text" name="lang-header" class="select__input select__input--hidden">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__main">
+		<div class="nav-bar offcanvas offcanvas-start" tabindex="-1" id="menu-mobile" aria-labelledby="menu-mobile">
+			<button type="button" class="nav-bar__close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			<div class="offcanvas-body">
+				<div class="nav-bar__head">
+					<a href="#" class="nav-bar__logo"><img src="img/header/logo.svg" alt="Антошка" width="110" height="34"></a>
+					<div class="nav-bar__langs">
+						<a href="#" class="nav-bar__lang text-uppercase _active">UA</a>
+						<a href="#" class="nav-bar__lang text-uppercase">RU</a>
+					</div>
+				</div>
+				<div class="nav-bar__actions">
+					<a href="#" class="d-flex align-items-center nav-bar__item">
+						<svg width="20" height="20" class="nav-bar__item-icon">
+							<use xlink:href="img/svg/icons.svg#user"></use>
+						</svg>
+						<p class="flex-grow-1">Войти</p>
+					</a>
+					<a href="#" class="d-flex align-items-center nav-bar__item">
+						<svg width="20" height="20" class="nav-bar__item-icon">
+							<use xlink:href="img/svg/icons.svg#favorite"></use>
+						</svg>
+						<p class="flex-grow-1">Избранное</p>
+						<span class="d-flex align-items-center fw-bold justify-content-center">5</span>
+					</a>
+					<a href="#" class="d-flex align-items-center nav-bar__item">
+						<svg width="20" height="20" class="nav-bar__item-icon">
+							<use xlink:href="img/svg/icons.svg#cart"></use>
+						</svg>
+						<p class="flex-grow-1">Корзина</p>
+						<span class="d-flex align-items-center fw-bold justify-content-center">99+</span>
+					</a>
+				</div>
+				<div class="menu-nav-bar nav-bar__menu">
+					<div class="d-flex align-items-center menu-nav-bar__city">
+						<p class="text-left menu-nav-bar__label">Город</p>
+					</div>
+					<div id="navbar-menu" class="menu-nav-bar__items">
+						<div class="menu-nav-bar__item">
+							<div role="navigation" class="d-flex align-items-center justify-content-between collapsed menu-nav-bar__head" data-bs-toggle="collapse" data-bs-target="#navbar-menu-1" aria-expanded="true" aria-controls="navbar-menu-1">
+								<p class="text-left menu-nav-bar__label">Связаться</p>
+							</div>
+							<ul id="navbar-menu-1" class="collapse menu-nav-bar__content" data-bs-parent="#navbar-menu">
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										<svg width="20" height="20" class="messenger">
+											<use xlink:href="img/svg/icons.svg#messenger"></use>
+										</svg>
+										Messenger							 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										<svg width="20" height="18" class="mail">
+											<use xlink:href="img/svg/icons.svg#mail"></use>
+										</svg>
+										Отправить письмо								 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="tel:0800306063" class="d-flex align-items-center column-gap-3 phone">
+										<svg width="20" height="18" class="phone">
+											<use xlink:href="img/svg/icons.svg#phone"></use>
+										</svg>
+										0 (800) 306-063										 
+									</a>
+									<p>Телефон горячей линии Ежедневно 9:00-21:00 Бесплатно по Украине</p>
+								</li>
+							</ul>
+						</div>
+						<div class="menu-nav-bar__item">
+							<div role="navigation" class="d-flex align-items-center justify-content-between collapsed menu-nav-bar__head" data-bs-toggle="collapse" data-bs-target="#navbar-menu-2" aria-expanded="false" aria-controls="navbar-menu-2">
+								<p class="text-left menu-nav-bar__label">Покупателям</p>
+							</div>
+							<ul id="navbar-menu-2" class="collapse menu-nav-bar__content" data-bs-parent="#navbar-menu">
+								<li class="menu-nav-bar__link">
+									<a href="#">Доставка и оплата</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Адреса магазинов</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Гарантия и возврат</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Бонусы</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Акции</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Статьи и обзоры</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Новости и события</a>
+								</li>
+							</ul>
+						</div>
+						<div class="menu-nav-bar__item">
+							<div role="navigation" class="d-flex align-items-center justify-content-between collapsed menu-nav-bar__head" data-bs-toggle="collapse" data-bs-target="#navbar-menu-3" aria-expanded="false" aria-controls="navbar-menu-3">
+								<p class="text-left menu-nav-bar__label">Компания</p>
+							</div>
+							<ul id="navbar-menu-3" class="collapse menu-nav-bar__content" data-bs-parent="#navbar-menu">
+								<li class="menu-nav-bar__link">
+									<a href="#">О нас</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Контакты</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Сотрудничество</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Вакансии</a>
+								</li>
+							</ul>
+						</div>
+						<div class="menu-nav-bar__item">
+							<div role="navigation" class="d-flex align-items-center justify-content-between collapsed menu-nav-bar__head" data-bs-toggle="collapse" data-bs-target="#navbar-menu-4" aria-expanded="false" aria-controls="navbar-menu-4">
+								<p class="text-left menu-nav-bar__label">Услуги</p>
+							</div>
+							<ul id="navbar-menu-4" class="collapse menu-nav-bar__content" data-bs-parent="#navbar-menu">
+								<li class="menu-nav-bar__link">
+									<a href="#">Подбор подарка</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Парикмахерская</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Школа мам</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<ul class="nav-bar__socials">
+					<li>
+						<a href="https://www.facebook.com/antoshkacom/" target="_blank" class="contacts-footer__social" aria-label="Перейти на facebook">
+							<svg width="10" height="19" class="facebook">
+								<use xlink:href="img/svg/icons.svg#facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/user/AntoshkaSupermarket" target="_blank" class="contacts-footer__social" aria-label="Перейти на youtube">
+							<svg width="22" height="18" class="youtube">
+								<use xlink:href="img/svg/icons.svg#youtube"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.tiktok.com/@antoshka.ua" target="_blank" class="contacts-footer__social" aria-label="Перейти на tiktok">
+							<svg width="17" height="19" class="tiktok">
+								<use xlink:href="img/svg/icons.svg#tiktok"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/antoshka.ua/" target="_blank" class="contacts-footer__social" aria-label="Перейти на instagram">
+							<svg width="22" height="22" class="insta">
+								<use xlink:href="img/svg/icons.svg#insta"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container-xxl">
+			<div class="d-flex align-items-center column-gap-4 column-gap-xl-0 header__content">
+				<a class="d-flex flex-grow-1 d-xl-none flex-md-grow-0 header__burger" data-bs-toggle="offcanvas" href="#menu-mobile" role="button" aria-controls="menu-mobile" aria-label="open-mobile-menu"></a>
+				<a data-da=".header__content, 1199, 1" href="#" class="logo">
+					<img src="img/header/logo.svg" alt="Антошка" width="110" height="34">
+				</a>
+				<button data-da=".nav-bar__actions, 1199, 1" type="button" class="d-flex align-items-center header__catalog text-left">
+					<img src="img/icons/close.svg" alt="close" class="close-icon" width="20" height="20">
+					<img src="img/icons/catalog.svg" alt="icon" width="20" height="20" class="catalog-icon">
+					Каталог
+				</button>
+				<form action="#" class="d-flex flex-md-grow-1 form-header header__form">
+					<div class="d-flex form-header__row form-header__row-main">
+						<div class="form-header__button" aria-label="open-search"></div>
+						<input autocomplete="off" type="search" name="search" placeholder="Я ищу..." class="form-header__input form-header__input-main">
+					</div>
+				</form>
+				<div class="d-flex align-items-center actions-header header__actions">
+					<a href="https://antoshka.ua/customer/account/login/" class="d-flex align-items-center text-center flex-column actions-header__item d-none d-xl-flex">
+						<div class="actions-header__icon">
+							<svg class="nav-bar__item-icon">
+								<use xlink:href="img/svg/icons.svg#user"></use>
+							</svg>
+						</div>
+						<p>Войти</p>
+						<div class="actions-header__tooltip actions-header__tooltip-first">Войдите в кабинет или пройдите регистрацию</div>
+					</a>
+					<a href="https://antoshka.ua/ua/customer/account/login/referer/" class="d-flex align-items-center text-center flex-column actions-header__item d-none d-xl-flex">
+						<div class="actions-header__icon">
+							<span class="d-flex align-items-center fw-bold justify-content-center text-center">5</span>
+							<svg class="nav-bar__item-icon">
+								<use xlink:href="img/svg/icons.svg#favorite"></use>
+							</svg>
+						</div>
+						<p>Избранное</p>
+						<div class="actions-header__tooltip actions-header__tooltip-main">Вы еще ничего не добавили</div>
+					</a>
+					<a href="https://antoshka.ua/checkout/cart/" class="d-flex align-items-center text-center flex-column actions-header__item me-2 me-md-4 me-xl-0" aria-label="99+ Корзина">
+						<div class="actions-header__icon">
+							<span class="align-items-center fw-bold justify-content-center text-center d-md-flex d-none">99+</span>
+							<svg class="nav-bar__item-icon">
+								<use xlink:href="img/svg/icons.svg#cart"></use>
+							</svg>
+						</div>
+						<p class="d-none d-xl-flex">Корзина</p>
+						<div class="actions-header__tooltip actions-header__tooltip-last">Вы еще ничего не добавили</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="dropdown-form form-header__dropdown">
+			<div class="container-xxl position-absolute start-50 top-50 translate-middle">
+				<div class="d-flex align-items-center">
+					<a href="#" class="dropdown-form__logo">
+						<img src="img/header/logo.svg" alt="Антошка" width="169" height="66">
+					</a>
+					<form action="../files/header_search/search.json" class="d-flex align-items-center dropdown-form__search flex-grow-1">
+						<div class="d-flex flex-grow-1 dropdown-form__input form-header__row">
+							<button type="submit" class="form-header__button" aria-label="open-search"></button>
+							<input autocomplete="off" type="text" name="search" placeholder="Я ищу..." class="form-header__input form-header__input-dropdown">
+							<button type="reset" class="form-header__clear modal-button-close" aria-label="clear-search">
+								<svg width="18" height="18" class="close">
+									<use xlink:href="img/svg/icons.svg#close"></use>
+								</svg>																													 
+							</button>
+						</div>
+						<button type="button" class="form-header__close">Закрыть</button>
+					</form>
+				</div>
+			</div>
+			<div class="dropdown-form__result result-dropdown">
+				<div class="result-dropdown__body">
+					<div class="container-xxl">
+						<div class="result-dropdown__line">
+							<div class="result-dropdown__column">
+								<div class="result-dropdown__label fw-bold">Tоп запросов</div>
+								<ul class="result-dropdown__list">
+									<li><a href="#">Одежда для новорожденных</a></li>
+									<li><a href="#">Молокоотсосы</a></li>
+									<li><a href="#">Стульчик для кормления</a></li>
+									<li><a href="#">Детская одежда Ленне</a></li>
+									<li><a href="#">Патроны, аксессуары</a></li>
+								</ul>
+							</div>
+							<div class="result-dropdown__column">
+								<div class="result-dropdown__label fw-bold">Вы искали</div>
+								<ul class="result-dropdown__list">
+									<li>
+										<a href="#">Водное оружие</a>
+										<a href="#">
+											<svg width="12" height="12" class="close-small-active">
+												<use xlink:href="img/svg/icons.svg#close-small-active"></use>
+											</svg>					 
+										</a>
+									</li>
+									<li>
+										<a href="#">Помповое оружие</a>
+										<a href="#">
+											<svg width="12" height="12" class="close-small-active">
+												<use xlink:href="img/svg/icons.svg#close-small-active"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">Лазерное оружие</a>
+										<a href="#">
+											<svg width="12" height="12" class="close-small-active">
+												<use xlink:href="img/svg/icons.svg#close-small-active"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">Мечи, щиты, луки</a>
+										<a href="#">
+											<svg width="12" height="12" class="close-small-active">
+												<use xlink:href="img/svg/icons.svg#close-small-active"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">Патроны, аксессуары</a>
+										<a href="#">
+											<svg width="12" height="12" class="close-small-active">
+												<use xlink:href="img/svg/icons.svg#close-small-active"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<button type="button" class="result-dropdown__clear">Очистить историю</button>
+						</div>
+						<div class="result-dropdown__searching searching-dropdown">
+							<div class="searching-dropdown__row">
+								<ul class="d-flex flex-column searching-dropdown__tooltips">
+									
+								</ul>
+								<div class="d-flex flex-column products-searching searching-dropdown__products"></div>
+							</div>
+							<p class="searching-dropdown__all"><a href="#">Все результаты</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+        <main class="page">
+            <section class="header-bonus">
+                <picture><source srcset="./img/bonus/bg/top-bg-1440.webp" type="image/webp"><img class="bg--img header-bonus__bg-img" src="./img/bonus/bg/top-bg-1440.png" alt="background image"></picture>
+                <picture><source srcset="./img/bonus/aside-1.webp" type="image/webp"><img class="header-bonus__bg-add" src="./img/bonus/aside-1.png" alt="image of a toy"></picture>
+                <div class="container header-bonus__container">
+                    <div class="header-bonus__heading">
+                        <h1 class="header-bonus__heading-title title--h1">люмісвіт</h1>
+                        <h2 class="header-bonus__heading-subtitle title--h2">Копите и списывайте бонусы</h2>
+                    </div>
+                    <div class="header-bonus__login">
+                        <button class="button--full header-bonus__login-btn">РЕГИСТРАЦИЯ</button>
+                        <button class="button--empty header-bonus__login-btn">ВХОД</button>
+                    </div>
+                </div>
+            </section>
+            <section class="buy">
+                <div class="container buy__container">
+                    <div class="buy__col buy__col-text">
+                        <span class="num--xl buy__num">01</span>
+                        <h3 class="title--h3 buy__title">Покупайте товары</h3>
+                        <p class="para--xl buy__para">
+                            Покупайте товары со специальными бонусными значками на сайте и в наших магазинах.
+                        </p>
+                    </div>
+                    <div class="buy__col">
+                        <picture><source srcset="./img/bonus/card-1.webp" type="image/webp"><img class="img--xl buy__img" src="./img/bonus/card-1.png" alt="card of the plush toy"></picture>
+                        <p class="para--xl para--additional">Покупайте товары со специальными бонусными значками на сайте и в наших магазинах.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="depo">
+                <div class="depo__container-pic">
+                    <picture><source srcset="./img/bonus/coin-1.webp" type="image/webp"><img class="depo__container-img depo__container-img--1" src="./img/bonus/coin-1.png" alt="coin"></picture>
+                    <picture><source srcset="./img/bonus/coin-2.webp" type="image/webp"><img class="depo__container-img depo__container-img--2" src="./img/bonus/coin-2.png" alt=""></picture>
+                    <picture><source srcset="./img/bonus/coin-3.webp" type="image/webp"><img class="depo__container-img depo__container-img--3" src="./img/bonus/coin-3.png" alt="coin"></picture>
+                </div>
+                <div class="container depo__container">
+                    <p class="para--xl para--additional">Покупайте товары со специальными бонусными значками на сайте и в наших магазинах.</p>
+                    <div class="depo__col">
+                        <picture>
+                            <source media="(min-width: 1300px)" srcset="./img/bonus/kopilka-1440.png">
+                            <source media="(min-width: 600px)" srcset="./img/bonus/kopilka-768.png">
+                            <source media="(min-width: 300px)" srcset="./img/bonus/kopilka-375.png">
+                            <img src="./img/bonus/kopilka-768.png" alt="Адаптивное изображение">
+                        </picture>
+                    </div>
+                    <div class="depo__col">
+                        <span class="num--xl depo__num">02</span>
+                        <h3 class="title--h3 depo__title">Увеличивайте накопления</h3>
+                        <p class="para--xl depo__para">
+                            Чем больше покупок Вы совершите, тем больше бонусов Вам будет насчитываться при каждой новой покупке.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="bonus">
+                <picture><source srcset="./img/bonus/bg/bottom-bg-1440.webp" type="image/webp"><img class="bg--img bonus__bg-img" src="./img/bonus/bg/bottom-bg-1440.png" alt="background image"></picture>
+                <picture><source srcset="./img/bonus/aside-2.webp" type="image/webp"><img class="bonus__col-add-img aside--2" src="./img/bonus/aside-2.png" alt="image of a toy"></picture>
+                <picture><source srcset="./img/bonus/bg/bottom-line.webp" type="image/webp"><img class="bonus__col-add-img bg--3" src="./img/bonus/bg/bottom-line.png" alt="image of a toy"></picture>
+                <div class="container bonus__container">
+                    <div class="bonus__col-text">
+                        <span class="num--xl bonus__num">03</span>
+                        <h3 class="title--h3 bonus__title">Оплачивайте бонусами</h3>
+                        <p class="para--xl bonus__para">
+                            Используйте накопленные бонусы как скидку на следующую покупку на сайте и в наших магазинах.
+                        </p>
+                    </div>
+                    <div class="bonus__col-img">
+                        <picture><source srcset="./img/bonus/card-2.webp" type="image/webp"><img class="img--xl bonus__img" src="./img/bonus/card-2.png" alt="card of the plush toy"></picture>
+                        <p class="para--xl para--additional">Используйте накопленные бонусы как скидку на следующую покупку на сайте и в наших магазинах.</p>
+                    </div>
+                    <div class="bonus__col-add">
+                        <div class="bonus__col-add-container-btns">
+                            <button class="button--full bonus__col-add-btn">Регистрация</button>
+                            <button class="bonus__col-add-btn button--empty">Войти</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="add">
+                <div class="container">
+                    <p class="add__para">
+                        Скидка на день рождения ребенка в размере 15% действует на неакционные товары категорий "Игрушки", "Одежда" и "Обувь". На товары ТМ L.O.L Surprise, Smoby, Little tikes, Xiamen, Huada Toys, Rollplay максимальная скидка составляет 5%. Бонусы при использовании скидки не начисляются. На подарочные сертификаты скидка не предоставляется.
+                    </p>
+                </div>
+            </div>
+            <section class="quest">
+                <div class="container quest__container">
+                    <div class="quest__heading">
+                        <h3 class="title--h3 quest__heading-title">Остались вопросы</h3>
+                    </div>
+                    <div class="quest__acc">
+                        
+                        <div class="accordion__item">
+    <div class="d-flex align-items-center justify-content-between accordion__item__header">
+        <div class="d-flex align-items-center title">
+            <h2><b>Что такое программа лояльности «Люмісвіт»?</b></h2>
+        </div>
+        <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.74" height="5.87" viewBox="0 0 9.74 5.87">
+                <path d="M-3282-1a1,1,0,0,1,.707.293l3.163,3.163,3.163-3.163a1,1,0,0,1,1.414,0,1,1,0,0,1,.293.707,1,1,0,0,1-.293.707l-3.867,3.867,0,0a1,1,0,0,1-1.414,0l-3.87-3.87A1,1,0,0,1-3283,0a1,1,0,0,1,.293-.707A1,1,0,0,1-3282-1Z" transform="translate(3283 1)" fill="#4b4da8" opacity="0.5"/>
+            </svg>
+        </div>
+    </div>
+    <div class="accordion__item__content">
+        lorem ipsum dolorem
+    </div>
+</div>
+                        
+                        <div class="accordion__item">
+    <div class="d-flex align-items-center justify-content-between accordion__item__header">
+        <div class="d-flex align-items-center title">
+            <h2><b>Как стать участником программы лояльности «Люмісвіт»?</b></h2>
+        </div>
+        <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.74" height="5.87" viewBox="0 0 9.74 5.87">
+                <path d="M-3282-1a1,1,0,0,1,.707.293l3.163,3.163,3.163-3.163a1,1,0,0,1,1.414,0,1,1,0,0,1,.293.707,1,1,0,0,1-.293.707l-3.867,3.867,0,0a1,1,0,0,1-1.414,0l-3.87-3.87A1,1,0,0,1-3283,0a1,1,0,0,1,.293-.707A1,1,0,0,1-3282-1Z" transform="translate(3283 1)" fill="#4b4da8" opacity="0.5"/>
+            </svg>
+        </div>
+    </div>
+    <div class="accordion__item__content">
+        lorem ipsum dolorem
+    </div>
+</div>
+                        
+                        <div class="accordion__item">
+    <div class="d-flex align-items-center justify-content-between accordion__item__header">
+        <div class="d-flex align-items-center title">
+            <h2><b>За какие покупки начисляются бонусы на карту лояльности «Люмісвіт»?</b></h2>
+        </div>
+        <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.74" height="5.87" viewBox="0 0 9.74 5.87">
+                <path d="M-3282-1a1,1,0,0,1,.707.293l3.163,3.163,3.163-3.163a1,1,0,0,1,1.414,0,1,1,0,0,1,.293.707,1,1,0,0,1-.293.707l-3.867,3.867,0,0a1,1,0,0,1-1.414,0l-3.87-3.87A1,1,0,0,1-3283,0a1,1,0,0,1,.293-.707A1,1,0,0,1-3282-1Z" transform="translate(3283 1)" fill="#4b4da8" opacity="0.5"/>
+            </svg>
+        </div>
+    </div>
+    <div class="accordion__item__content">
+        lorem ipsum dolorem
+    </div>
+</div>
+                        
+                        <div class="accordion__item">
+    <div class="d-flex align-items-center justify-content-between accordion__item__header">
+        <div class="d-flex align-items-center title">
+            <h2><b>Где и как можно оплатить покупки бонусами с карты лояльности «Люмісвіт»?</b></h2>
+        </div>
+        <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.74" height="5.87" viewBox="0 0 9.74 5.87">
+                <path d="M-3282-1a1,1,0,0,1,.707.293l3.163,3.163,3.163-3.163a1,1,0,0,1,1.414,0,1,1,0,0,1,.293.707,1,1,0,0,1-.293.707l-3.867,3.867,0,0a1,1,0,0,1-1.414,0l-3.87-3.87A1,1,0,0,1-3283,0a1,1,0,0,1,.293-.707A1,1,0,0,1-3282-1Z" transform="translate(3283 1)" fill="#4b4da8" opacity="0.5"/>
+            </svg>
+        </div>
+    </div>
+    <div class="accordion__item__content">
+        lorem ipsum dolorem
+    </div>
+</div>
+                        
+                        <div class="accordion__item">
+    <div class="d-flex align-items-center justify-content-between accordion__item__header">
+        <div class="d-flex align-items-center title">
+            <h2><b>Какие виды бонусов существуют?</b></h2>
+        </div>
+        <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.74" height="5.87" viewBox="0 0 9.74 5.87">
+                <path d="M-3282-1a1,1,0,0,1,.707.293l3.163,3.163,3.163-3.163a1,1,0,0,1,1.414,0,1,1,0,0,1,.293.707,1,1,0,0,1-.293.707l-3.867,3.867,0,0a1,1,0,0,1-1.414,0l-3.87-3.87A1,1,0,0,1-3283,0a1,1,0,0,1,.293-.707A1,1,0,0,1-3282-1Z" transform="translate(3283 1)" fill="#4b4da8" opacity="0.5"/>
+            </svg>
+        </div>
+    </div>
+    <div class="accordion__item__content">
+        lorem ipsum dolorem
+    </div>
+</div>
+                        
+                        <div class="accordion__item">
+    <div class="d-flex align-items-center justify-content-between accordion__item__header">
+        <div class="d-flex align-items-center title">
+            <h2><b>Когда я могу оплачивать покупки бонусами?</b></h2>
+        </div>
+        <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.74" height="5.87" viewBox="0 0 9.74 5.87">
+                <path d="M-3282-1a1,1,0,0,1,.707.293l3.163,3.163,3.163-3.163a1,1,0,0,1,1.414,0,1,1,0,0,1,.293.707,1,1,0,0,1-.293.707l-3.867,3.867,0,0a1,1,0,0,1-1.414,0l-3.87-3.87A1,1,0,0,1-3283,0a1,1,0,0,1,.293-.707A1,1,0,0,1-3282-1Z" transform="translate(3283 1)" fill="#4b4da8" opacity="0.5"/>
+            </svg>
+        </div>
+    </div>
+    <div class="accordion__item__content">
+        lorem ipsum dolorem
+    </div>
+</div>
+                        
+                        <div class="accordion__item">
+    <div class="d-flex align-items-center justify-content-between accordion__item__header">
+        <div class="d-flex align-items-center title">
+            <h2><b>Если для оплаты покупки мне не хватает бонусов, могу ли я оплатить деньгами часть стоимости товара?</b></h2>
+        </div>
+        <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.74" height="5.87" viewBox="0 0 9.74 5.87">
+                <path d="M-3282-1a1,1,0,0,1,.707.293l3.163,3.163,3.163-3.163a1,1,0,0,1,1.414,0,1,1,0,0,1,.293.707,1,1,0,0,1-.293.707l-3.867,3.867,0,0a1,1,0,0,1-1.414,0l-3.87-3.87A1,1,0,0,1-3283,0a1,1,0,0,1,.293-.707A1,1,0,0,1-3282-1Z" transform="translate(3283 1)" fill="#4b4da8" opacity="0.5"/>
+            </svg>
+        </div>
+    </div>
+    <div class="accordion__item__content">
+        lorem ipsum dolorem
+    </div>
+</div>
+                        
+                        <div class="accordion__item">
+    <div class="d-flex align-items-center justify-content-between accordion__item__header">
+        <div class="d-flex align-items-center title">
+            <h2><b>Если сумма бонусов больше стоимости покупки, что случится с остатком бонусов на моей карте?</b></h2>
+        </div>
+        <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.74" height="5.87" viewBox="0 0 9.74 5.87">
+                <path d="M-3282-1a1,1,0,0,1,.707.293l3.163,3.163,3.163-3.163a1,1,0,0,1,1.414,0,1,1,0,0,1,.293.707,1,1,0,0,1-.293.707l-3.867,3.867,0,0a1,1,0,0,1-1.414,0l-3.87-3.87A1,1,0,0,1-3283,0a1,1,0,0,1,.293-.707A1,1,0,0,1-3282-1Z" transform="translate(3283 1)" fill="#4b4da8" opacity="0.5"/>
+            </svg>
+        </div>
+    </div>
+    <div class="accordion__item__content">
+        lorem ipsum dolorem
+    </div>
+</div>
+                        
+                        <div class="accordion__item">
+    <div class="d-flex align-items-center justify-content-between accordion__item__header">
+        <div class="d-flex align-items-center title">
+            <h2><b>Есть ли срок действия карты лояльности «Люмісвіт»?</b></h2>
+        </div>
+        <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.74" height="5.87" viewBox="0 0 9.74 5.87">
+                <path d="M-3282-1a1,1,0,0,1,.707.293l3.163,3.163,3.163-3.163a1,1,0,0,1,1.414,0,1,1,0,0,1,.293.707,1,1,0,0,1-.293.707l-3.867,3.867,0,0a1,1,0,0,1-1.414,0l-3.87-3.87A1,1,0,0,1-3283,0a1,1,0,0,1,.293-.707A1,1,0,0,1-3282-1Z" transform="translate(3283 1)" fill="#4b4da8" opacity="0.5"/>
+            </svg>
+        </div>
+    </div>
+    <div class="accordion__item__content">
+        lorem ipsum dolorem
+    </div>
+</div>
+                    </div>
+                    <div class="quest__add">
+                        <picture><source srcset="./img/bonus/aside-3.webp" type="image/webp"><img class="quest__add-img" src="./img/bonus/aside-3.png" alt="figure of a toy"></picture>
+                    </div>
+                    <div class="quest__btn-wrapper">
+                        <button class="button--full quest__btn">правила бонусной программы «Люмісвіт»</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="mailto">
+   <div class="mailto__inner text-center">
+      <div class="mailto__content">
+         <div class="mailto__title title-section">Подписывайтесь на рассылку!</div>
+         <p class="mailto__subtitle">и получайте промокоды и эксклюзивные предложения</p>
+         <form action="#" class="d-flex mailto__form">
+            <input type="email" name="mailto" placeholder="Ваш e-mail" class="mailto__input">
+            <button type="submit" class="mailto__button" aria-label="Отправить">
+               <img src="img/icons/mailing.svg" alt="Отправить" width="32" height="17">
+            </button>
+         </form>
+      </div>
+   </div>
+</div> <footer class="footer">
+	<div class="footer__top top-footer">
+		<div class="container-xxl">
+			<div class="row top-footer__inner">
+				<div class="col-md-4">
+					<a href="#" class="align-items-center column-gap-3 d-inline-flex text-left top-footer__item top-footer__item-box">
+						<svg width="32" height="32" class="gift">
+							<use xlink:href="img/svg/icons.svg#gift"></use>
+						</svg>
+						<span>Подбор подарка</span>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="#" class="align-items-center column-gap-3 d-inline-flex text-left top-footer__item top-footer__item-barbershop">
+						<svg width="32" height="32" class="hairdresser">
+							<use xlink:href="img/svg/icons.svg#hairdresser"></use>
+						</svg>					 
+						<span>Парикмахерская</span>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="#" class="align-items-center column-gap-3 d-inline-flex text-left top-footer__item top-footer__item-scholl">
+						<svg width="32" height="32" class="school-mom">
+							<use xlink:href="img/svg/icons.svg#school-mom"></use>
+						</svg>
+						<span>Школа мам</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer__main">
+		<div class="container-xxl">
+			<div class="row footer-row-desktop">
+				<div class="col-xl-4 mb-xl-0 mb-2">
+					<nav class="footer__menu menu-footer">
+						<div class="d-flex align-items-center justify-content-between fw-bold menu-footer__label">
+							Покупателям
+						</div>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="#">Доставка и оплата</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Адреса магазинов</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Гарантия и возврат</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Бонусы</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Акции</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Статьи и обзоры</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Новости и события</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-xl-4 mb-xl-0 mb-5">
+					<nav class="footer__menu menu-footer">
+						<div class="d-flex align-items-center justify-content-between fw-bold menu-footer__label">
+							Компания
+						</div>
+						<ul class="menu-footer__list">
+						  <li class="menu-footer__item">
+							 <a href="#">О нас</a>
+						  </li>
+						  <li class="menu-footer__item">
+							 <a href="#">Контакты</a>
+						  </li>
+						  <li class="menu-footer__item">
+							 <a href="#">Сотрудничество</a>
+						  </li>
+						  <li class="menu-footer__item">
+							 <a href="#">Вакансии</a>
+						  </li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-xl-4">
+					<nav class="contacts-footer footer__contacts">
+						<a href="tel:0800306063" class="contacts-footer__phone fw-bold">0 (800) 306-063</a>
+						<p class="contacts-footer__lead">Телефон горячей линии. Ежедневно 9:00-21:00 Бесплатно по Украине</p>
+						<div class="d-flex align-items-center justify-content-center justify-content-xl-start column-gap-4 mb-5 mb-xl-4">
+							<a title="email" href="mailto:info@antoshka.ua" class="contacts-footer__link">info@antoshka.ua</a>
+							<a title="Question" href="#" class="contacts-footer__link">Задать вопрос</a>
+						</div>
+						<div class="d-flex align-items-center justify-content-center justify-content-xl-start contacts-footer__socials flex-wrap row-gap-3">
+							<a href="https://www.facebook.com/antoshkacom/" target="_blank" class="contacts-footer__social" aria-label="Перейти на facebook">
+								<svg width="10" height="19" class="facebook">
+									<use xlink:href="img/svg/icons.svg#facebook"></use>
+								</svg>
+							</a>
+							<a href="https://www.youtube.com/user/AntoshkaSupermarket" target="_blank" class="contacts-footer__social" aria-label="Перейти на youtube">
+								<svg width="22" height="18" class="youtube">
+									<use xlink:href="img/svg/icons.svg#youtube"></use>
+								</svg>
+							</a>
+							<a href="https://www.tiktok.com/@antoshka.ua" target="_blank" class="contacts-footer__social" aria-label="Перейти на tiktok">
+								<svg width="17" height="19" class="tiktok">
+									<use xlink:href="img/svg/icons.svg#tiktok"></use>
+								</svg>
+							</a>
+							<a href="https://www.instagram.com/antoshka.ua/" target="_blank" class="contacts-footer__social" aria-label="Перейти на instagram">
+								<svg width="22" height="22" class="insta">
+									<use xlink:href="img/svg/icons.svg#insta"></use>
+								</svg>
+							</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="row footer-row-mobile">
+				<div class="col-xl-4 mb-xl-0 mb-2">
+					<nav class="footer__menu menu-footer">
+						<div class="d-flex align-items-center justify-content-between collapsed fw-bold menu-footer__label" data-bs-toggle="collapse" data-bs-target="#menu-spoller-1">
+							Покупателям
+						</div>
+						<ul class="collapse menu-footer__list" id="menu-spoller-1">
+							<li class="menu-footer__item">
+								<a href="#">Доставка и оплата</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Адреса магазинов</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Гарантия и возврат</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Бонусы</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Акции</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Статьи и обзоры</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Новости и события</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-xl-4 mb-xl-0 mb-5">
+					<nav class="footer__menu menu-footer">
+						<div class="d-flex align-items-center justify-content-between collapsed fw-bold menu-footer__label" data-bs-toggle="collapse" data-bs-target="#menu-spoller-2">
+							Компания
+						</div>
+						<ul class="collapse menu-footer__list" id="menu-spoller-2">
+							<li class="menu-footer__item">
+								<a href="#">О нас</a>
+							 </li>
+							 <li class="menu-footer__item">
+								<a href="#">Контакты</a>
+							 </li>
+							 <li class="menu-footer__item">
+								<a href="#">Сотрудничество</a>
+							 </li>
+							 <li class="menu-footer__item">
+								<a href="#">Вакансии</a>
+							 </li>
+						</ul>
+					 </nav>
+				</div>
+				<div class="col-xl-4">
+					<nav class="contacts-footer footer__contacts contacts-footer-mobile">
+						<a href="tel:0800306063" class="contacts-footer__phone fw-bold">0 (800) 306-063</a>
+						<p class="contacts-footer__lead">Телефон горячей линии. Ежедневно 9:00-21:00 Бесплатно по Украине</p>
+						<div class="d-flex align-items-center justify-content-center justify-content-xl-start column-gap-4 mb-5 mb-xl-4">
+							<a title="email" href="mailto:info@antoshka.ua" class="contacts-footer__link">info@antoshka.ua</a>
+							<a title="Question" href="#" class="contacts-footer__link">Задать вопрос</a>
+						</div>
+						<div class="d-flex align-items-center justify-content-center justify-content-xl-start contacts-footer__socials flex-wrap row-gap-3">
+							<a href="https://www.facebook.com/antoshkacom/" target="_blank" class="contacts-footer__social" aria-label="Перейти на facebook">
+								<svg width="10" height="19" class="facebook">
+									<use xlink:href="img/svg/icons.svg#facebook"></use>
+								</svg>
+							</a>
+							<a href="https://www.youtube.com/user/AntoshkaSupermarket" target="_blank" class="contacts-footer__social" aria-label="Перейти на youtube">
+								<svg width="22" height="18" class="youtube">
+									<use xlink:href="img/svg/icons.svg#youtube"></use>
+								</svg>
+							</a>
+							<a href="https://www.tiktok.com/@antoshka.ua" target="_blank" class="contacts-footer__social" aria-label="Перейти на tiktok">
+								<svg width="17" height="19" class="tiktok">
+									<use xlink:href="img/svg/icons.svg#tiktok"></use>
+								</svg>
+							</a>
+							<a href="https://www.instagram.com/antoshka.ua/" target="_blank" class="contacts-footer__social" aria-label="Перейти на instagram">
+								<svg width="22" height="22" class="insta">
+									<use xlink:href="img/svg/icons.svg#insta"></use>
+								</svg>
+							</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="container-xxl">
+			<div class="footer__row">
+				<div class="align-items-center column-gap-4 d-md-flex d-none">
+					<a data-da=".contacts-footer-mobile, 1200, first" href="#" class="footer__logo">
+						<img src="img/header/logo.svg" alt="Антошка" width="110" height="34">
+					</a>
+					<p data-da=".footer__row, 767, 2" class="footer__copy">© Antoshka.ua 2013–2023. Все права защищены.</p>
+				</div>
+				<div class="d-flex align-items-center text-center flex-column flex-xl-row footer__policy">
+					<a href="#" class="footer__ruls">Правила пользования</a>
+					<a href="#" class="footer__ruls">Политика конфиденциальности</a>
+				</div>
+				<a href="#" class="footer__img" aria-label="Перейти до дизай студії">
+					<svg width="71" height="33" class="style">
+						<use xlink:href="img/svg/icons.svg#style"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+    </div>
+</body>
+</html>

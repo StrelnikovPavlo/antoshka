@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124.5" height="150.35" viewBox="0 0 124.5 150.35">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#f04137"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#f6a232"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fac607"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#64b64b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.71" stop-color="#29bbce"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#4b5aa0"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <path d="M124.5,0V9.73A142.387,142.387,0,0,0,4.29,150.35H0A153.054,153.054,0,0,1,124.5,0Z" fill="url(#linear-gradient)"/>
+    <path d="M124.5,9.73v9.9A131.721,131.721,0,0,0,8.59,150.35H4.29A142.387,142.387,0,0,1,124.5,9.73Z" fill="url(#linear-gradient-2)"/>
+    <path d="M124.5,19.63V29.72A121.076,121.076,0,0,0,12.88,150.35H8.59A131.721,131.721,0,0,1,124.5,19.63Z" fill="url(#linear-gradient-3)"/>
+    <path d="M124.5,29.72V40.08A110.4,110.4,0,0,0,17.18,150.35h-4.3A121.076,121.076,0,0,1,124.5,29.72Z" fill="url(#linear-gradient-4)"/>
+    <path d="M124.5,40.08V50.76c-1.08-.04-2.17-.06-3.26-.06a99.766,99.766,0,0,0-99.77,99.65H17.18A110.4,110.4,0,0,1,124.5,40.08Z" opacity="0.81" fill="url(#linear-gradient-5)"/>
+    <path d="M124.5,50.76V61.89a87.375,87.375,0,0,0-9.62-.52,89.113,89.113,0,0,0-89.11,88.98h-4.3A99.766,99.766,0,0,1,121.24,50.7c1.09,0,2.18.02,3.26.06Z" opacity="0.81" fill="url(#linear-gradient-6)"/>
+  </g>
+</svg>

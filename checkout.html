@@ -1,0 +1,1744 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <title>Checkout</title>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Публічний договір Приватного Підприємства Торгівельна Фірма «Антошка»">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/delivery.min.css?_v=20230829134847">
+  <link rel="preload" as="image" href="img/buttontotop/uph.svg">
+
+  <script defer="defer" src="js/jguery.min.js?_v=20230829134847"></script>
+  <script defer="defer" src="js/select2.min.js?_v=20230829134847"></script>
+  <script defer="defer" src="js/bootstrap.min.js?_v=20230829134847"></script>
+  <script defer="defer" src="js/header.min.js?_v=20230829134847"></script>
+  <script defer="defer" src="js/footer.min.js?_v=20230829134847"></script>
+  <script defer="defer" src="js/popup.min.js?_v=20230829134847"></script>
+  <script defer="defer" src="js/functions.min.js?_v=20230829134847"></script>
+  <script defer="defer" src="js/delivery.min.js?_v=20230829134847"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+	<div class="header__top">
+		<div class="container-xxl">
+			<div class="d-flex align-items-center justify-content-between column-gap-4">
+				<a data-popup="location" data-location=".header__location" data-da=".menu-nav-bar__city, 1199" href="#" class="d-flex align-items-center header__location">
+					<span>Киев</span>
+				</a>
+				<nav class="header__menu menu-header">
+					<ul class="d-flex align-items-center menu-header__list">
+						<li class="menu-header__item">
+							<a href="#" class="d-flex align-items-center menu-header__link">
+								Связаться
+								<svg width="9" height="6" class="arrow">
+									<use xlink:href="img/svg/icons.svg#arrow"></use>
+								</svg>
+							</a>
+							<ul class="dropdown-menu-header menu-header__dropdown">
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										<svg width="20" height="20" class="messenger">
+											<use xlink:href="img/svg/icons.svg#messenger"></use>
+										</svg>
+										Messenger							 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										<svg width="20" height="18" class="mail">
+											<use xlink:href="img/svg/icons.svg#mail"></use>
+										</svg>
+										Отправить письмо								 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="tel:0800306063" class="d-flex align-items-center column-gap-3 phone">
+										<svg width="20" height="18" class="phone">
+											<use xlink:href="img/svg/icons.svg#phone"></use>
+										</svg>
+										0 (800) 306-063										 
+									</a>
+									<p>Телефон горячей линии Ежедневно 9:00-21:00 Бесплатно по Украине</p>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-header__item">
+							<a href="#" class="d-flex align-items-center menu-header__link">
+								Покупателям
+								<svg width="9" height="6" class="arrow">
+									<use xlink:href="img/svg/icons.svg#arrow"></use>
+								</svg>
+							</a>
+							<ul class="dropdown-menu-header menu-header__dropdown dropdown-menu-header__wide">
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Доставка и оплата							 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Гарантия и возврат						 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Бонусы
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Акции
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Статьи и обзоры
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Новости и события
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-header__item">
+							<a href="#" class="d-flex align-items-center menu-header__link">
+								Компания
+								<svg width="9" height="6" class="arrow">
+									<use xlink:href="img/svg/icons.svg#arrow"></use>
+								</svg>
+							</a>
+							<ul class="dropdown-menu-header menu-header__dropdown dropdown-menu-header__wide">
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										О нас						 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Контакты						 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Сотрудничество
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Вакансии
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-header__item">
+							<a href="#" class="d-flex align-items-center menu-header__link">
+								Услуги
+								<svg width="9" height="6" class="arrow">
+									<use xlink:href="img/svg/icons.svg#arrow"></use>
+								</svg>
+							</a>
+							<ul class="dropdown-menu-header menu-header__dropdown dropdown-menu-header__wide">
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Подбор подарка						 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Парикмахерская						 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										Школа мам
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="select">
+					<button class="select__button" type="button">
+						<span>UA</span>
+						<svg width="9" height="6" class="arrow">
+							<use xlink:href="img/svg/icons.svg#arrow"></use>
+						</svg>
+					</button>
+					<div class="select__wrapper">
+						<ul class="select__list">
+							<li class="language select__item choose" data-select="ru">
+								<a href="#">UA</a>
+							</li>
+							<li class="language select__item" data-select="uk"><a href="#">RU</a></li>
+						</ul>
+						<input type="text" name="lang-header" class="select__input select__input--hidden">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__main">
+		<div class="nav-bar offcanvas offcanvas-start" tabindex="-1" id="menu-mobile" aria-labelledby="menu-mobile">
+			<button type="button" class="nav-bar__close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			<div class="offcanvas-body">
+				<div class="nav-bar__head">
+					<a href="#" class="nav-bar__logo"><img src="img/header/logo.svg" alt="Антошка" width="110" height="34"></a>
+					<div class="nav-bar__langs">
+						<a href="#" class="_active nav-bar__lang text-uppercase">UA</a>
+						<a href="#" class="text-uppercase nav-bar__lang">RU</a>
+					</div>
+				</div>
+				<div class="nav-bar__actions">
+					<a href="#" class="d-flex align-items-center nav-bar__item">
+						<svg width="20" height="20" class="nav-bar__item-icon">
+							<use xlink:href="img/svg/icons.svg#user"></use>
+						</svg>
+						<p class="flex-grow-1">Войти</p>
+					</a>
+					<a href="#" class="d-flex align-items-center nav-bar__item">
+						<svg width="20" height="20" class="nav-bar__item-icon">
+							<use xlink:href="img/svg/icons.svg#favorite"></use>
+						</svg>
+						<p class="flex-grow-1">Избранное</p>
+						<span class="d-flex align-items-center justify-content-center fw-bold">5</span>
+					</a>
+					<a href="#" class="d-flex align-items-center nav-bar__item">
+						<svg width="20" height="20" class="nav-bar__item-icon">
+							<use xlink:href="img/svg/icons.svg#cart"></use>
+						</svg>
+						<p class="flex-grow-1">Корзина</p>
+						<span class="d-flex align-items-center justify-content-center fw-bold">99+</span>
+					</a>
+				</div>
+				<div class="menu-nav-bar nav-bar__menu">
+					<div class="d-flex align-items-center menu-nav-bar__city">
+						<p class="text-left menu-nav-bar__label">Город</p>
+					</div>
+					<div id="navbar-menu" class="menu-nav-bar__items">
+						<div class="menu-nav-bar__item">
+							<div role="navigation" class="d-flex align-items-center justify-content-between collapsed menu-nav-bar__head" data-bs-toggle="collapse" data-bs-target="#navbar-menu-1" aria-expanded="true" aria-controls="navbar-menu-1">
+								<p class="text-left menu-nav-bar__label">Связаться</p>
+							</div>
+							<ul id="navbar-menu-1" class="collapse menu-nav-bar__content" data-bs-parent="#navbar-menu">
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										<svg width="20" height="20" class="messenger">
+											<use xlink:href="img/svg/icons.svg#messenger"></use>
+										</svg>
+										Messenger							 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="#" class="d-flex align-items-center column-gap-3">
+										<svg width="20" height="18" class="mail">
+											<use xlink:href="img/svg/icons.svg#mail"></use>
+										</svg>
+										Отправить письмо								 
+									</a>
+								</li>
+								<li class="dropdown-menu-header__item">
+									<a href="tel:0800306063" class="d-flex align-items-center column-gap-3 phone">
+										<svg width="20" height="18" class="phone">
+											<use xlink:href="img/svg/icons.svg#phone"></use>
+										</svg>
+										0 (800) 306-063										 
+									</a>
+									<p>Телефон горячей линии Ежедневно 9:00-21:00 Бесплатно по Украине</p>
+								</li>
+							</ul>
+						</div>
+						<div class="menu-nav-bar__item">
+							<div role="navigation" class="d-flex align-items-center justify-content-between collapsed menu-nav-bar__head" data-bs-toggle="collapse" data-bs-target="#navbar-menu-2" aria-expanded="false" aria-controls="navbar-menu-2">
+								<p class="text-left menu-nav-bar__label">Покупателям</p>
+							</div>
+							<ul id="navbar-menu-2" class="collapse menu-nav-bar__content" data-bs-parent="#navbar-menu">
+								<li class="menu-nav-bar__link">
+									<a href="#">Доставка и оплата</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Адреса магазинов</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Гарантия и возврат</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Бонусы</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Акции</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Статьи и обзоры</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Новости и события</a>
+								</li>
+							</ul>
+						</div>
+						<div class="menu-nav-bar__item">
+							<div role="navigation" class="d-flex align-items-center justify-content-between collapsed menu-nav-bar__head" data-bs-toggle="collapse" data-bs-target="#navbar-menu-3" aria-expanded="false" aria-controls="navbar-menu-3">
+								<p class="text-left menu-nav-bar__label">Компания</p>
+							</div>
+							<ul id="navbar-menu-3" class="collapse menu-nav-bar__content" data-bs-parent="#navbar-menu">
+								<li class="menu-nav-bar__link">
+									<a href="#">О нас</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Контакты</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Сотрудничество</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Вакансии</a>
+								</li>
+							</ul>
+						</div>
+						<div class="menu-nav-bar__item">
+							<div role="navigation" class="d-flex align-items-center justify-content-between collapsed menu-nav-bar__head" data-bs-toggle="collapse" data-bs-target="#navbar-menu-4" aria-expanded="false" aria-controls="navbar-menu-4">
+								<p class="text-left menu-nav-bar__label">Услуги</p>
+							</div>
+							<ul id="navbar-menu-4" class="collapse menu-nav-bar__content" data-bs-parent="#navbar-menu">
+								<li class="menu-nav-bar__link">
+									<a href="#">Подбор подарка</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Парикмахерская</a>
+								</li>
+								<li class="menu-nav-bar__link">
+									<a href="#">Школа мам</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<ul class="nav-bar__socials">
+					<li>
+						<a href="https://www.facebook.com/antoshkacom/" target="_blank" class="contacts-footer__social" aria-label="Перейти на facebook">
+							<svg width="10" height="19" class="facebook">
+								<use xlink:href="img/svg/icons.svg#facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/user/AntoshkaSupermarket" target="_blank" class="contacts-footer__social" aria-label="Перейти на youtube">
+							<svg width="22" height="18" class="youtube">
+								<use xlink:href="img/svg/icons.svg#youtube"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.tiktok.com/@antoshka.ua" target="_blank" class="contacts-footer__social" aria-label="Перейти на tiktok">
+							<svg width="17" height="19" class="tiktok">
+								<use xlink:href="img/svg/icons.svg#tiktok"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/antoshka.ua/" target="_blank" class="contacts-footer__social" aria-label="Перейти на instagram">
+							<svg width="22" height="22" class="insta">
+								<use xlink:href="img/svg/icons.svg#insta"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container-xxl">
+			<div class="d-flex align-items-center column-gap-4 column-gap-xl-0 header__content">
+				<a class="d-flex flex-grow-1 d-xl-none flex-md-grow-0 header__burger" data-bs-toggle="offcanvas" href="#menu-mobile" role="button" aria-controls="menu-mobile" aria-label="open-mobile-menu"></a>
+				<a data-da=".header__content, 1199, 1" href="#" class="logo">
+					<img src="img/header/logo.svg" alt="Антошка" width="110" height="34">
+				</a>
+				<button data-da=".nav-bar__actions, 1199, 1" type="button" class="d-flex align-items-center header__catalog text-left">
+					<img src="img/icons/close.svg" alt="close" class="close-icon" width="20" height="20">
+					<img src="img/icons/catalog.svg" alt="icon" width="20" height="20" class="catalog-icon">
+					Каталог
+				</button>
+				<form action="#" class="d-flex flex-md-grow-1 form-header header__form">
+					<div class="d-flex form-header__row form-header__row-main">
+						<div class="form-header__button" aria-label="open-search"></div>
+						<input autocomplete="off" type="search" name="search" placeholder="Я ищу..." class="form-header__input form-header__input-main">
+					</div>
+				</form>
+				<div class="d-flex align-items-center actions-header header__actions">
+					<a href="https://antoshka.ua/customer/account/login/" class="d-flex align-items-center flex-column text-center actions-header__item d-none d-xl-flex">
+						<div class="actions-header__icon">
+							<svg class="nav-bar__item-icon">
+								<use xlink:href="img/svg/icons.svg#user"></use>
+							</svg>
+						</div>
+						<p>Войти</p>
+						<div class="actions-header__tooltip actions-header__tooltip-first">Войдите в кабинет или пройдите регистрацию</div>
+					</a>
+					<a href="https://antoshka.ua/ua/customer/account/login/referer/" class="d-flex align-items-center flex-column text-center actions-header__item d-none d-xl-flex">
+						<div class="actions-header__icon">
+							<span class="d-flex align-items-center justify-content-center fw-bold text-center">5</span>
+							<svg class="nav-bar__item-icon">
+								<use xlink:href="img/svg/icons.svg#favorite"></use>
+							</svg>
+						</div>
+						<p>Избранное</p>
+						<div class="actions-header__tooltip actions-header__tooltip-main">Вы еще ничего не добавили</div>
+					</a>
+					<a href="https://antoshka.ua/checkout/cart/" class="d-flex align-items-center flex-column text-center actions-header__item me-2 me-md-4 me-xl-0" aria-label="99+ Корзина">
+						<div class="actions-header__icon">
+							<span class="align-items-center justify-content-center fw-bold text-center d-md-flex d-none">99+</span>
+							<svg class="nav-bar__item-icon">
+								<use xlink:href="img/svg/icons.svg#cart"></use>
+							</svg>
+						</div>
+						<p class="d-none d-xl-flex">Корзина</p>
+						<div class="actions-header__tooltip actions-header__tooltip-last">Вы еще ничего не добавили</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="dropdown-form form-header__dropdown">
+			<div class="container-xxl position-absolute start-50 top-50 translate-middle">
+				<div class="d-flex align-items-center">
+					<a href="#" class="dropdown-form__logo">
+						<img src="img/header/logo.svg" alt="Антошка" width="169" height="66">
+					</a>
+					<form action="../files/header_search/search.json" class="d-flex align-items-center dropdown-form__search flex-grow-1">
+						<div class="d-flex flex-grow-1 dropdown-form__input form-header__row">
+							<button type="submit" class="form-header__button" aria-label="open-search"></button>
+							<input autocomplete="off" type="text" name="search" placeholder="Я ищу..." class="form-header__input form-header__input-dropdown">
+							<button type="reset" class="modal-button-close form-header__clear" aria-label="clear-search">
+								<svg width="18" height="18" class="close">
+									<use xlink:href="img/svg/icons.svg#close"></use>
+								</svg>																													 
+							</button>
+						</div>
+						<button type="button" class="form-header__close">Закрыть</button>
+					</form>
+				</div>
+			</div>
+			<div class="dropdown-form__result result-dropdown">
+				<div class="result-dropdown__body">
+					<div class="container-xxl">
+						<div class="result-dropdown__line">
+							<div class="result-dropdown__column">
+								<div class="result-dropdown__label fw-bold">Tоп запросов</div>
+								<ul class="result-dropdown__list">
+									<li><a href="#">Одежда для новорожденных</a></li>
+									<li><a href="#">Молокоотсосы</a></li>
+									<li><a href="#">Стульчик для кормления</a></li>
+									<li><a href="#">Детская одежда Ленне</a></li>
+									<li><a href="#">Патроны, аксессуары</a></li>
+								</ul>
+							</div>
+							<div class="result-dropdown__column">
+								<div class="result-dropdown__label fw-bold">Вы искали</div>
+								<ul class="result-dropdown__list">
+									<li>
+										<a href="#">Водное оружие</a>
+										<a href="#">
+											<svg width="12" height="12" class="close-small-active">
+												<use xlink:href="img/svg/icons.svg#close-small-active"></use>
+											</svg>					 
+										</a>
+									</li>
+									<li>
+										<a href="#">Помповое оружие</a>
+										<a href="#">
+											<svg width="12" height="12" class="close-small-active">
+												<use xlink:href="img/svg/icons.svg#close-small-active"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">Лазерное оружие</a>
+										<a href="#">
+											<svg width="12" height="12" class="close-small-active">
+												<use xlink:href="img/svg/icons.svg#close-small-active"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">Мечи, щиты, луки</a>
+										<a href="#">
+											<svg width="12" height="12" class="close-small-active">
+												<use xlink:href="img/svg/icons.svg#close-small-active"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">Патроны, аксессуары</a>
+										<a href="#">
+											<svg width="12" height="12" class="close-small-active">
+												<use xlink:href="img/svg/icons.svg#close-small-active"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<button type="button" class="result-dropdown__clear">Очистить историю</button>
+						</div>
+						<div class="result-dropdown__searching searching-dropdown">
+							<div class="searching-dropdown__row">
+								<ul class="d-flex flex-column searching-dropdown__tooltips">
+									
+								</ul>
+								<div class="d-flex flex-column products-searching searching-dropdown__products"></div>
+							</div>
+							<p class="searching-dropdown__all"><a href="#">Все результаты</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+    <main class="page">
+      <section class="d-flex align-items-center flex-column checkout justify-content-start">
+        <h1><b>Оформление заказа</b></h1>
+        <div class="d-flex justify-content-between flex-wrap align-items-start checkout__inner">
+          <div class="d-flex align-items-center flex-column checkout__inner-content">
+            <article class="checkout__inner-content--client">
+              <div class="d-flex align-items-center justify-content-center switch-client">
+                <div class="d-flex align-items-center justify-content-between switch-client__inner">
+                  <span class="active-client new"><b>Я новый клиент</b></span><span class="auth"><b>Я постоянный
+                      клиент</b></span>
+                </div>
+              </div>
+              <div class="align-items-center flex-column form-client">
+                <div class="form-client__title"><b>Укажите контактную информацию</b></div>
+                <form class="d-flex align-items-center justify-content-between flex-wrap">
+                  <div class="field">
+                    <input type="text" placeholder="Фамилия" autocomplete="off">
+                    <span>Фамилия</span>
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="Имя" autocomplete="off">
+                    <span>Имя</span>
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="Телефон" id="telephone" autocomplete="off">
+                    <span>Телефон</span>
+                    <div class="success"></div>
+                    <div class="error"></div>
+                    <p>Введите свой номер телефона в правильном формате</p>
+                  </div>
+                  <div class="field">
+                    <input type="email" placeholder="E-mail (не обязательно)" id="email" autocomplete="off">
+                    <span>E-mail</span>
+                    <div class="success"></div>
+                    <div class="error"></div>
+                    <p>Введите свой e-mail в правильном формате</p>
+                  </div>
+                  <div class="d-flex client-existence">
+                    <div class="info-error"></div>
+                    <p>Такой пользователь уже существует. <a href="#">Авторизуйтесь</a></p>
+                  </div>
+                </form>
+              </div>
+              <div class="align-items-center flex-column form-authorization justify-content-center">
+                <form class="d-flex align-items-center flex-column">
+                  <div class="align-items-center flex-column code-step">
+                    <button class="current-number" type="button">
+                      <span class="number"></span>
+                      <span class="border-edit-icon"></span>
+                    </button>
+                    <p class="code-sent-info">Вам выслан SMS/Viber с кодом. Укажите его в поле ниже</p>
+                    <div class="field code-auth">
+                      <input type="text" placeholder="Код из 4 цифр" id="code-auth" autocomplete="off">
+                      <span>Код из 4 цифр</span>
+                      <div class="success"></div>
+                      <div class="error"></div>
+                      <p>Введён неправильный код, попробуйте еще раз</p>
+                    </div>
+                    <button class="auth-finish" type="button" disabled="disabled">Войти</button>
+                  </div>
+                  <div class="field telephone-auth">
+                    <input type="text" placeholder="Телефон" id="your_telephone" autocomplete="off">
+                    <span>Ваш телефон</span>
+                    <div class="success"></div>
+                    <div class="error"></div>
+                    <p>Введите свой номер телефона в правильном формате</p>
+                  </div>
+                  <button class="auth_next" type="button" disabled="disabled">Далее</button>
+                </form>
+              </div>
+            </article>
+            <div class="d-flex checkout__inner-content--warn">
+              <div class="info-icon"></div>
+              Внимание! Товары, находящиеся на разных складах, будут доставлены отдельными заказами
+            </div>
+            <article class="d-flex flex-column align-items-start checkout__inner-content--order_item">
+              <div class="d-flex align-items-center justify-content-between order_item-title">
+                <h2><b>Заказ №1 на сумму 28 968 ₴</b></h2>
+                <span class="d-flex align-items-center justify-content-between">
+                  <a href="#">
+                    <div class="edit-borderless"></div>
+                  </a>
+                  <a href="#">Редактировать</a>
+                </span>
+              </div>
+              <div class="d-flex flex-column align-items-start order_item-content">
+                <article class="d-flex justify-content-between order_item-content__inner-item">
+                  <div class="d-flex align-items-center info">
+                    <a href="#"><picture><source srcset="img/cart/769ja13d.webp" type="image/webp"><img src="img/cart/769ja13d.webp" alt="car"></picture></a>
+                    <div class="d-flex flex-column align-items-start info__inner">
+                      <h3><a href="#">Машинка Maisto Chevrolet Colorado ZR2</a></h3>
+                      <p class="d-flex">
+                        <span>1968 ₴ x 1</span>
+                        <span>Код: 6089093</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="align-items-center count">1 шт.</div>
+                  <div class="d-flex price">
+                    <span class="price-old"><s>2400 ₴</s></span>
+                    <span class="price-current"><b>1968 ₴</b></span>
+                  </div>
+                </article>
+                <article class="d-flex justify-content-between order_item-content__inner-item">
+                  <div class="d-flex align-items-center info">
+                    <a href="#"><picture><source srcset="img/cart/njgatgbl.webp" type="image/webp"><img src="img/cart/njgatgbl.webp" alt="carriage"></picture></a>
+                    <div class="d-flex flex-column align-items-start info__inner">
+                      <h3><a href="#">Прогулочная коляска BabyStyle Oyster 3 Mercury City Grey New</a>
+                      </h3>
+                      <p class="d-flex">
+                        <span>27 000 ₴ x 1</span>
+                        <span>Код: 6089093</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="align-items-center count">1 шт.</div>
+                  <div class="d-flex price">
+                    <span class="price-current"><b>27 000 ₴</b></span>
+                  </div>
+                </article>
+              </div>
+              <div class="d-flex align-items-center flex-column order_item-delivery">
+                <div class="d-flex align-items-center delivery__header">
+                  <div class="d-flex delivery__header--wrapper flex-nowrap">
+                    <span class="title"><b>Доставка в</b>&nbsp;</span>
+                    <button data-popup="location" data-location=".info-product__label" type="button" class="info-product__label"><span>Киев</span></button>
+                  </div>
+                  <span class="line"></span>
+                </div>
+                <div class="d-flex justify-content-start delivery__type-switcher">
+                  <div class="d-flex justify-content-between delivery__type-switcher--inner">
+                    <button type="button" class="shop-self">Самовывоз из магазинов</button>
+                    <button type="button" class="_active new-poshta">Новая Почта</button>
+                  </div>
+                </div>
+                <div class="align-items-start checkout__inner-content--warn">
+                  <div class="info-icon"></div>
+                  Выбранный ранее срок доставки не актуален с данным способом оплаты. Сроки будут уточнены
+                  после согласования платежа.
+                </div>
+                <form class="delivery__details shop">
+                  <p class="delivery__details--receive-free">
+                    Забрать завтра с 12:00.
+                    <span>Бесплатно</span>
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between delivery__details--select-address">
+                    <select name="address">
+                      <option value="item1">Бульв. Леси Украинки, 19</option>
+                      <option value="item2">Бульв. Леси Украинки, 19</option>
+                      <option value="item3">Бульв. Леси Украинки, 19</option>
+                    </select>
+                    <p class="d-flex align-items-center justify-content-center">
+                      <span class="mapstick"></span>
+                      <a href="#">Магазин на карте</a>
+                    </p>
+                  </div>
+                  <div class="delivery__details--schedule">
+                    <h4>График работы:</h4>
+                    <p>Пн-Сб: 08:00-21:00</p>
+                    <p>Вс: 08:00-21:00</p>
+                    <p class="d-flex align-items-center light-on">
+                      <span class="light_bulb"></span>
+                      <span>Свет есть вседа</span>
+                    </p>
+                  </div>
+                </form>
+                <form class="delivery__details poshta">
+                  <div class="d-flex align-items-center justify-content-between delivery__details--radio">
+                    <div class="custom-radio">
+                      <input type="radio" id="department-radio" class="department-radio" name="delivery" checked="checked">
+                      <label for="department-radio">На отделение</label>
+                    </div>
+                    <div class="custom-radio">
+                      <input type="radio" id="courier-radio" class="courier-radio" name="delivery">
+                      <label for="courier-radio">Курьером</label>
+                    </div>
+                  </div>
+                  <p class="delivery__details--receive-free">
+                    Забрать завтра с 12:00.
+                    <span>Бесплатно</span>
+                  </p>
+                  <p class="delivery__details--send">
+                    Отправим завтра. 80 ₴
+                  </p>
+                  <div class="align-items-center justify-content-between delivery__details--select-address">
+                    <select name="address">
+                      <option value="item1">Бульв. Леси Украинки, 19</option>
+                      <option value="item2">Бульв. Леси Украинки, 19</option>
+                      <option value="item3">Бульв. Леси Украинки, 19</option>
+                    </select>
+                    <p class="d-flex align-items-center justify-content-center">
+                      <span class="mapstick"></span>
+                      <a href="#">Отделения на карте</a>
+                    </p>
+                  </div>
+                  <div class="align-items-center justify-content-between delivery__details--home-address">
+                    <div class="field home-street">
+                      <input type="text" placeholder="Улица" autocomplete="off">
+                      <span>Улица</span>
+                    </div>
+                    <div class="field home-build">
+                      <input type="text" placeholder="Дом" autocomplete="off">
+                      <span>Дом</span>
+                    </div>
+                    <div class="field home-flat">
+                      <input type="text" placeholder="Квартира" autocomplete="off">
+                      <span>Квартира</span>
+                    </div>
+                  </div>
+                  <div class="delivery__details--auth-address">
+                    <select name="auth_address">
+                      <option value="item1">Бульв. Леси Украинки, 19</option>
+                      <option value="item2">Бульв. Леси Украинки, 19</option>
+                      <option value="item3">Бульв. Леси Украинки, 19</option>
+                    </select>
+                    <button type="button" class="align-items-center new-address-btn">
+                      <span class="plus"></span>
+                      <span>Новый адрес</span>
+                    </button>
+                  </div>
+                  <div class="align-items-center justify-content-between checkbox remember">
+                    <input class="checkbox__input" type="checkbox" value="" id="remember" checked="checked">
+                    <label class="checkbox__label" for="remember">Запомнить адрес</label>
+                    <button type="button" class="align-items-center back-to-auth">
+                      <img src="./img/cart/cont_shop_arrow.svg" alt="back">
+                      <span>Вернуться к сохранённым адресам</span>
+                    </button>
+                  </div>
+                  <div class="delivery__details--schedule">
+                    <h4>График работы:</h4>
+                    <p>Пн-Сб: 08:00-21:00</p>
+                    <p>Вс: 08:00-21:00</p>
+                  </div>
+                </form>
+                <div class="d-flex align-items-center delivery__header">
+                  <div class="d-flex delivery__header--wrapper flex-nowrap">
+                    <span class="title"><b>Оплата</b>&nbsp;</span>
+                  </div>
+                  <span class="line"></span>
+                </div>
+                <form class="delivery__payment">
+                </form>
+                <div class="d-flex align-items-center delivery__header">
+                  <div class="d-flex delivery__header--wrapper flex-nowrap">
+                    <span class="title"><b>Получатель</b>&nbsp;</span>
+                  </div>
+                  <span class="line"></span>
+                </div>
+                <form class="d-flex flex-column align-items-start delivery__receiver">
+                  <div class="d-flex delivery__receiver--buttons">
+                    <div class="custom-radio">
+                      <input type="radio" id="i" name="receiver" class="receiver-check" checked="checked">
+                      <label for="i">Я</label>
+                    </div>
+                    <div class="custom-radio">
+                      <input type="radio" id="s" name="receiver" class="receiver-check check-another-receiver">
+                      <label for="s">Другой человек</label>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between checkbox">
+                      <input class="checkbox__input" type="checkbox" value="" id="recall">
+                      <label class="checkbox__label" for="recall">можно не перезванивать для
+                        оформления заказа</label>
+                    </div>
+                  </div>
+                  <div class="delivery__receiver--another-person flex-wrap justify-content-between">
+                    <select name="nick">
+                      <option value="item1">Мама</option>
+                      <option value="item2">Папа</option>
+                      <option value="item3">Брат</option>
+                    </select>
+                    <div class="field">
+                      <input type="text" placeholder="Фамилия" autocomplete="off">
+                      <span>Фамилия</span>
+                    </div>
+                    <div class="field">
+                      <input type="text" placeholder="Имя" autocomplete="off">
+                      <span>Имя</span>
+                    </div>
+                    <div class="field">
+                      <input type="text" placeholder="Телефон" id="telephone_another" autocomplete="off" class="telephone_another">
+                      <span>Телефон</span>
+                      <div class="success"></div>
+                      <div class="error"></div>
+                      <p>Введите свой номер телефона в правильном формате</p>
+                    </div>
+                    <div class="field">
+                      <input type="email" placeholder="E-mail (не обязательно)" id="email_another" autocomplete="off" class="email_another">
+                      <span>E-mail</span>
+                      <div class="success"></div>
+                      <div class="error"></div>
+                      <p>Введите свой e-mail в правильном формате</p>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap remember-actions">
+                      <div class="align-items-center justify-content-between checkbox">
+                        <input class="checkbox__input rememb_another" type="checkbox" value="" id="rememb_another">
+                        <label class="checkbox__label" for="rememb_another">Запомнить получателя</label>
+                      </div>
+                      <button type="button" class="align-items-center new-receiver-btn">
+                        <span class="plus"></span>
+                        <span>Новый получатель</span>
+                      </button>
+                      <button type="button" class="copy-another">
+                        <span class="copy-icon"></span>
+                        <span>Скопировать для остальных заказов</span>
+                      </button>
+                      <button type="button" class="align-items-center back-to-auth-receiver">
+                        <img src="./img/cart/cont_shop_arrow.svg" alt="back">
+                        <span>Вернуться к выбору получателя</span>
+                      </button>
+                      <div class="field create-nick">
+                        <input type="text" placeholder="Ник(пр. Мама, папа, брат, друг)" autocomplete="off">
+                        <span>Ник</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="delivery__receiver--comment">
+                    <button type="button" href="#">Добавить комментарий к заказу</button>
+                  </div>
+                  <div class="field delivery__receiver--comment-field">
+                    <input type="text" placeholder="Комментарий к заказу" autocomplete="off">
+                    <span>Комментарий к заказу</span>
+                  </div>
+                </form>
+              </div>
+            </article>
+            <article class="d-flex flex-column align-items-start checkout__inner-content--order_item">
+              <div class="d-flex align-items-center justify-content-between order_item-title">
+                <h2><b>Заказ №2 на сумму 1968 ₴</b></h2>
+                <span class="d-flex align-items-center justify-content-between">
+                  <a href="#">
+                    <div class="edit-borderless"></div>
+                  </a>
+                  <a href="#">Редактировать</a>
+                </span>
+              </div>
+              <div class="d-flex flex-column align-items-start order_item-content">
+                <article class="d-flex justify-content-between order_item-content__inner-item">
+                  <div class="d-flex align-items-center info">
+                    <a href="#"><picture><source srcset="img/cart/0erlpyzs.webp" type="image/webp"><img src="img/cart/0erlpyzs.webp" alt="car"></picture></a>
+                    <div class="d-flex flex-column align-items-start info__inner">
+                      <h3><a href="#">Джемпер Mevis Green Christmas, р. 98</a></h3>
+                      <p class="d-flex">
+                        <span>1968 ₴ x 1</span>
+                        <span>Код: 6089093</span>
+                        <span>Размер: 104</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="align-items-center count">1 шт.</div>
+                  <div class="d-flex price">
+                    <span class="price-old"><s>2400 ₴</s></span>
+                    <span class="price-current"><b>1968 ₴</b></span>
+                  </div>
+                </article>
+              </div>
+              <div class="d-flex align-items-center flex-column order_item-delivery">
+                <div class="d-flex align-items-center delivery__header">
+                  <div class="d-flex delivery__header--wrapper flex-nowrap">
+                    <span class="title"><b>Доставка в</b>&nbsp;</span>
+                    <button data-popup="location" data-location=".info-product__label" type="button" class="info-product__label"><span>Киев</span></button>
+                  </div>
+                  <span class="line"></span>
+                </div>
+                <div class="d-flex justify-content-start delivery__type-switcher">
+                  <div class="d-flex justify-content-between delivery__type-switcher--inner">
+                    <button type="button" class="shop-self">Самовывоз из магазинов</button>
+                    <button type="button" class="_active new-poshta">Новая Почта</button>
+                  </div>
+                </div>
+                <div class="align-items-start checkout__inner-content--warn">
+                  <div class="info-icon"></div>
+                  Выбранный ранее срок доставки не актуален с данным способом оплаты. Сроки будут уточнены
+                  после согласования платежа.
+                </div>
+                <form class="delivery__details shop">
+                  <p class="delivery__details--receive-free">
+                    Забрать завтра с 12:00.
+                    <span>Бесплатно</span>
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between delivery__details--select-address">
+                    <select name="address">
+                      <option value="item1">Бульв. Леси Украинки, 19</option>
+                      <option value="item2">Бульв. Леси Украинки, 19</option>
+                      <option value="item3">Бульв. Леси Украинки, 19</option>
+                    </select>
+                    <p class="d-flex align-items-center justify-content-center">
+                      <span class="mapstick"></span>
+                      <a href="#">Магазин на карте</a>
+                    </p>
+                  </div>
+                  <div class="delivery__details--schedule">
+                    <h4>График работы:</h4>
+                    <p>Пн-Сб: 08:00-21:00</p>
+                    <p>Вс: 08:00-21:00</p>
+                    <p class="d-flex align-items-center light-on">
+                      <span class="light_bulb"></span>
+                      <span>Свет есть вседа</span>
+                    </p>
+                  </div>
+                </form>
+                <form class="delivery__details poshta">
+                  <div class="d-flex align-items-center justify-content-between delivery__details--radio">
+                    <div class="custom-radio">
+                      <input type="radio" id="department-radio2" class="department-radio" name="delivery" checked="checked">
+                      <label for="department-radio2">На отделение</label>
+                    </div>
+                    <div class="custom-radio">
+                      <input type="radio" id="courier-radio2" class="courier-radio" name="delivery">
+                      <label for="courier-radio2">Курьером</label>
+                    </div>
+                  </div>
+                  <p class="delivery__details--receive-free">
+                    Забрать завтра с 12:00.
+                    <span>Бесплатно</span>
+                  </p>
+                  <p class="delivery__details--send">
+                    Отправим завтра. 80 ₴
+                  </p>
+                  <div class="align-items-center justify-content-between delivery__details--select-address">
+                    <select name="address">
+                      <option value="item1">Бульв. Леси Украинки, 19</option>
+                      <option value="item2">Бульв. Леси Украинки, 19</option>
+                      <option value="item3">Бульв. Леси Украинки, 19</option>
+                    </select>
+                    <p class="d-flex align-items-center justify-content-center">
+                      <span class="mapstick"></span>
+                      <a href="#">Отделения на карте</a>
+                    </p>
+                  </div>
+                  <div class="align-items-center justify-content-between delivery__details--home-address">
+                    <div class="field home-street">
+                      <input type="text" placeholder="Улица" autocomplete="off">
+                      <span>Улица</span>
+                    </div>
+                    <div class="field home-build">
+                      <input type="text" placeholder="Дом" autocomplete="off">
+                      <span>Дом</span>
+                    </div>
+                    <div class="field home-flat">
+                      <input type="text" placeholder="Квартира" autocomplete="off">
+                      <span>Квартира</span>
+                    </div>
+                  </div>
+                  <div class="delivery__details--auth-address">
+                    <select name="auth_address">
+                      <option value="item1">Бульв. Леси Украинки, 19</option>
+                      <option value="item2">Бульв. Леси Украинки, 19</option>
+                      <option value="item3">Бульв. Леси Украинки, 19</option>
+                    </select>
+                    <button type="button" class="align-items-center new-address-btn">
+                      <span class="plus"></span>
+                      <span>Новый адрес</span>
+                    </button>
+                  </div>
+                  <div class="align-items-center justify-content-between checkbox remember">
+                    <input class="checkbox__input" type="checkbox" value="" id="remember2" checked="checked">
+                    <label class="checkbox__label" for="remember2">Запомнить адрес</label>
+                    <button type="button" class="align-items-center back-to-auth">
+                      <img src="./img/cart/cont_shop_arrow.svg" alt="back">
+                      <span>Вернуться к сохранённым адресам</span>
+                    </button>
+                  </div>
+                  <div class="delivery__details--schedule">
+                    <h4>График работы:</h4>
+                    <p>Пн-Сб: 08:00-21:00</p>
+                    <p>Вс: 08:00-21:00</p>
+                  </div>
+                </form>
+                <div class="d-flex align-items-center delivery__header">
+                  <div class="d-flex delivery__header--wrapper flex-nowrap">
+                    <span class="title"><b>Оплата</b>&nbsp;</span>
+                  </div>
+                  <span class="line"></span>
+                </div>
+                <form class="delivery__payment">
+
+                </form>
+                <div class="d-flex align-items-center delivery__header">
+                  <div class="d-flex delivery__header--wrapper flex-nowrap">
+                    <span class="title"><b>Получатель</b>&nbsp;</span>
+                  </div>
+                  <span class="line"></span>
+                </div>
+                <form class="d-flex flex-column align-items-start delivery__receiver">
+                  <div class="d-flex delivery__receiver--buttons">
+                    <div class="custom-radio">
+                      <input type="radio" id="i2" name="receiver" class="receiver-check" checked="checked">
+                      <label for="i2">Я</label>
+                    </div>
+                    <div class="custom-radio">
+                      <input type="radio" id="s2" name="receiver" class="receiver-check check-another-receiver">
+                      <label for="s2">Другой человек</label>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between checkbox">
+                      <input class="checkbox__input" type="checkbox" value="" id="recall2">
+                      <label class="checkbox__label" for="recall2">можно не перезванивать для
+                        оформления заказа</label>
+                    </div>
+                  </div>
+                  <div class="delivery__receiver--another-person flex-wrap justify-content-between">
+                    <select name="nick">
+                      <option value="item1">Мама</option>
+                      <option value="item2">Папа</option>
+                      <option value="item3">Брат</option>
+                    </select>
+                    <div class="field">
+                      <input type="text" placeholder="Фамилия" autocomplete="off">
+                      <span>Фамилия</span>
+                    </div>
+                    <div class="field">
+                      <input type="text" placeholder="Имя" autocomplete="off">
+                      <span>Имя</span>
+                    </div>
+                    <div class="field">
+                      <input type="text" placeholder="Телефон" id="telephone_another2" autocomplete="off" class="telephone_another">
+                      <span>Телефон</span>
+                      <div class="success"></div>
+                      <div class="error"></div>
+                      <p>Введите свой номер телефона в правильном формате</p>
+                    </div>
+                    <div class="field">
+                      <input type="email" placeholder="E-mail (не обязательно)" id="email_another2" autocomplete="off" class="email_another">
+                      <span>E-mail</span>
+                      <div class="success"></div>
+                      <div class="error"></div>
+                      <p>Введите свой e-mail в правильном формате</p>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap remember-actions">
+                      <div class="align-items-center justify-content-between checkbox">
+                        <input class="checkbox__input rememb_another" type="checkbox" value="" id="rememb_another2">
+                        <label class="checkbox__label" for="rememb_another2">Запомнить получателя</label>
+                      </div>
+                      <button type="button" class="align-items-center new-receiver-btn">
+                        <span class="plus"></span>
+                        <span>Новый получатель</span>
+                      </button>
+                      <button type="button" class="copy-another">
+                        <span class="copy-icon"></span>
+                        <span>Скопировать для остальных заказов</span>
+                      </button>
+                      <button type="button" class="align-items-center back-to-auth-receiver">
+                        <img src="./img/cart/cont_shop_arrow.svg" alt="back">
+                        <span>Вернуться к выбору получателя</span>
+                      </button>
+                      <div class="field create-nick">
+                        <input type="text" placeholder="Ник(пр. Мама, папа, брат, друг)" autocomplete="off">
+                        <span>Ник</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="delivery__receiver--comment">
+                    <button type="button" href="#">Добавить комментарий к заказу</button>
+                  </div>
+                  <div class="field delivery__receiver--comment-field">
+                    <input type="text" placeholder="Комментарий к заказу" autocomplete="off">
+                    <span>Комментарий к заказу</span>
+                  </div>
+                </form>
+              </div>
+            </article>
+          </div>
+          <div class="d-flex align-items-center flex-column checkout__inner-order">
+            <div class="d-flex align-items-center justify-content-between flex-wrap checkout__inner-order--promo">
+              <h2><b>Промокод</b></h2>
+              <button type="button" class="add_promo">Добавить</button>
+              <div class="order-field">
+                <input type="text" placeholder="Введите код">
+                <div class="go-arrow"></div>
+                <div class="close"></div>
+                <span>Применен промокод "Весна"</span>
+              </div>
+            </div>
+            <div class="align-items-center justify-content-between flex-wrap checkout__inner-order--bonuses">
+              <div class="d-flex align-items-center">
+                <h2><b>1354 бонусов</b></h2>
+                <span class="info-icon"></span>
+              </div>
+              <button class="use_bonuses">Использовать</button>
+              <div class="inner-bonuses flex-column">
+                <p>
+                  Вам выслан SMS/Viber с кодом. Укажите его в поле ниже
+                </p>
+                <div class="order-field">
+                  <input type="text" placeholder="Код из 3 цифр">
+                  <div class="go-arrow"></div>
+                  <div class="close"></div>
+                </div>
+                <button type="button" class="resend-code">Отправить код повторно</button>
+              </div>
+            </div>
+            <article class="checkout__inner-order--pay">
+              <div class="d-flex flex-column info">
+                <p>
+                  <span>4 товара на сумму</span>
+                  <span class="price-amount">27 000 ₴</span>
+                </p>
+                <p>
+                  <span>Доставка</span>
+                  <span class="delivery-cost">Бесплатно</span>
+                </p>
+                <p>
+                  <span>Будет начислено</span>
+                  <span class="bonus-count">+779 бонусов</span>
+                </p>
+                <p class="bonuses-sale">
+                  <span>Вы списали</span>
+                  <span>-90 бонусов</span>
+                </p>
+                <p class="promo-sale">
+                  <span>Скидка по промокоду<span class="info-icon"></span></span>
+                  <span>-1000 ₴</span>
+                </p>
+                <p class="ac-sale">
+                  <span>Акционные скидки<span class="info-icon"></span></span>
+                  <span>-1000 ₴</span>
+                </p>
+              </div>
+              <div class="d-flex align-items-center justify-content-between total-price">
+                <h2><b>Сумма к оплате</b></h2>
+                <span><b>27 000 ₴</b></span>
+              </div>
+              <div class="d-flex align-items-center flex-column confirm-order">
+                <button class="confirm-order--button"><b>Подтвердить заказ</b></button>
+                <p>
+                  Подтверждая заказ я принимаю условия <a href="#">пользовательского соглашения</a>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <div class="mailto">
+   <div class="mailto__inner text-center">
+      <div class="mailto__content">
+         <div class="mailto__title title-section">Подписывайтесь на рассылку!</div>
+         <p class="mailto__subtitle">и получайте промокоды и эксклюзивные предложения</p>
+         <form action="#" class="d-flex mailto__form">
+            <input type="email" name="mailto" placeholder="Ваш e-mail" class="mailto__input">
+            <button type="submit" class="mailto__button" aria-label="Отправить">
+               <img src="img/icons/mailing.svg" alt="Отправить" width="32" height="17">
+            </button>
+         </form>
+      </div>
+   </div>
+</div>
+      <div class="button-top" tabindex="0">
+        <button type="button" class="button-top__img" aria-label="page-to-top"></button>
+      </div>
+    </main>
+    <footer class="footer">
+	<div class="footer__top top-footer">
+		<div class="container-xxl">
+			<div class="row top-footer__inner">
+				<div class="col-md-4">
+					<a href="#" class="align-items-center column-gap-3 d-inline-flex text-left top-footer__item top-footer__item-box">
+						<svg width="32" height="32" class="gift">
+							<use xlink:href="img/svg/icons.svg#gift"></use>
+						</svg>
+						<span>Подбор подарка</span>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="#" class="align-items-center column-gap-3 d-inline-flex text-left top-footer__item top-footer__item-barbershop">
+						<svg width="32" height="32" class="hairdresser">
+							<use xlink:href="img/svg/icons.svg#hairdresser"></use>
+						</svg>					 
+						<span>Парикмахерская</span>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="#" class="align-items-center column-gap-3 d-inline-flex text-left top-footer__item top-footer__item-scholl">
+						<svg width="32" height="32" class="school-mom">
+							<use xlink:href="img/svg/icons.svg#school-mom"></use>
+						</svg>
+						<span>Школа мам</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer__main">
+		<div class="container-xxl">
+			<div class="row footer-row-desktop">
+				<div class="col-xl-4 mb-xl-0 mb-2">
+					<nav class="footer__menu menu-footer">
+						<div class="d-flex align-items-center justify-content-between fw-bold menu-footer__label">
+							Покупателям
+						</div>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="#">Доставка и оплата</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Адреса магазинов</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Гарантия и возврат</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Бонусы</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Акции</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Статьи и обзоры</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Новости и события</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-xl-4 mb-xl-0 mb-5">
+					<nav class="footer__menu menu-footer">
+						<div class="d-flex align-items-center justify-content-between fw-bold menu-footer__label">
+							Компания
+						</div>
+						<ul class="menu-footer__list">
+						  <li class="menu-footer__item">
+							 <a href="#">О нас</a>
+						  </li>
+						  <li class="menu-footer__item">
+							 <a href="#">Контакты</a>
+						  </li>
+						  <li class="menu-footer__item">
+							 <a href="#">Сотрудничество</a>
+						  </li>
+						  <li class="menu-footer__item">
+							 <a href="#">Вакансии</a>
+						  </li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-xl-4">
+					<nav class="contacts-footer footer__contacts">
+						<a href="tel:0800306063" class="contacts-footer__phone fw-bold">0 (800) 306-063</a>
+						<p class="contacts-footer__lead">Телефон горячей линии. Ежедневно 9:00-21:00 Бесплатно по Украине</p>
+						<div class="d-flex align-items-center justify-content-center justify-content-xl-start column-gap-4 mb-5 mb-xl-4">
+							<a title="email" href="mailto:info@antoshka.ua" class="contacts-footer__link">info@antoshka.ua</a>
+							<a title="Question" href="#" class="contacts-footer__link">Задать вопрос</a>
+						</div>
+						<div class="d-flex align-items-center justify-content-center justify-content-xl-start contacts-footer__socials flex-wrap row-gap-3">
+							<a href="https://www.facebook.com/antoshkacom/" target="_blank" class="contacts-footer__social" aria-label="Перейти на facebook">
+								<svg width="10" height="19" class="facebook">
+									<use xlink:href="img/svg/icons.svg#facebook"></use>
+								</svg>
+							</a>
+							<a href="https://www.youtube.com/user/AntoshkaSupermarket" target="_blank" class="contacts-footer__social" aria-label="Перейти на youtube">
+								<svg width="22" height="18" class="youtube">
+									<use xlink:href="img/svg/icons.svg#youtube"></use>
+								</svg>
+							</a>
+							<a href="https://www.tiktok.com/@antoshka.ua" target="_blank" class="contacts-footer__social" aria-label="Перейти на tiktok">
+								<svg width="17" height="19" class="tiktok">
+									<use xlink:href="img/svg/icons.svg#tiktok"></use>
+								</svg>
+							</a>
+							<a href="https://www.instagram.com/antoshka.ua/" target="_blank" class="contacts-footer__social" aria-label="Перейти на instagram">
+								<svg width="22" height="22" class="insta">
+									<use xlink:href="img/svg/icons.svg#insta"></use>
+								</svg>
+							</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="row footer-row-mobile">
+				<div class="col-xl-4 mb-xl-0 mb-2">
+					<nav class="footer__menu menu-footer">
+						<div class="d-flex align-items-center justify-content-between collapsed fw-bold menu-footer__label" data-bs-toggle="collapse" data-bs-target="#menu-spoller-1">
+							Покупателям
+						</div>
+						<ul class="collapse menu-footer__list" id="menu-spoller-1">
+							<li class="menu-footer__item">
+								<a href="#">Доставка и оплата</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Адреса магазинов</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Гарантия и возврат</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Бонусы</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Акции</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Статьи и обзоры</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#">Новости и события</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-xl-4 mb-xl-0 mb-5">
+					<nav class="footer__menu menu-footer">
+						<div class="d-flex align-items-center justify-content-between collapsed fw-bold menu-footer__label" data-bs-toggle="collapse" data-bs-target="#menu-spoller-2">
+							Компания
+						</div>
+						<ul class="collapse menu-footer__list" id="menu-spoller-2">
+							<li class="menu-footer__item">
+								<a href="#">О нас</a>
+							 </li>
+							 <li class="menu-footer__item">
+								<a href="#">Контакты</a>
+							 </li>
+							 <li class="menu-footer__item">
+								<a href="#">Сотрудничество</a>
+							 </li>
+							 <li class="menu-footer__item">
+								<a href="#">Вакансии</a>
+							 </li>
+						</ul>
+					 </nav>
+				</div>
+				<div class="col-xl-4">
+					<nav class="contacts-footer footer__contacts contacts-footer-mobile">
+						<a href="tel:0800306063" class="contacts-footer__phone fw-bold">0 (800) 306-063</a>
+						<p class="contacts-footer__lead">Телефон горячей линии. Ежедневно 9:00-21:00 Бесплатно по Украине</p>
+						<div class="d-flex align-items-center justify-content-center justify-content-xl-start column-gap-4 mb-5 mb-xl-4">
+							<a title="email" href="mailto:info@antoshka.ua" class="contacts-footer__link">info@antoshka.ua</a>
+							<a title="Question" href="#" class="contacts-footer__link">Задать вопрос</a>
+						</div>
+						<div class="d-flex align-items-center justify-content-center justify-content-xl-start contacts-footer__socials flex-wrap row-gap-3">
+							<a href="https://www.facebook.com/antoshkacom/" target="_blank" class="contacts-footer__social" aria-label="Перейти на facebook">
+								<svg width="10" height="19" class="facebook">
+									<use xlink:href="img/svg/icons.svg#facebook"></use>
+								</svg>
+							</a>
+							<a href="https://www.youtube.com/user/AntoshkaSupermarket" target="_blank" class="contacts-footer__social" aria-label="Перейти на youtube">
+								<svg width="22" height="18" class="youtube">
+									<use xlink:href="img/svg/icons.svg#youtube"></use>
+								</svg>
+							</a>
+							<a href="https://www.tiktok.com/@antoshka.ua" target="_blank" class="contacts-footer__social" aria-label="Перейти на tiktok">
+								<svg width="17" height="19" class="tiktok">
+									<use xlink:href="img/svg/icons.svg#tiktok"></use>
+								</svg>
+							</a>
+							<a href="https://www.instagram.com/antoshka.ua/" target="_blank" class="contacts-footer__social" aria-label="Перейти на instagram">
+								<svg width="22" height="22" class="insta">
+									<use xlink:href="img/svg/icons.svg#insta"></use>
+								</svg>
+							</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="container-xxl">
+			<div class="footer__row">
+				<div class="align-items-center column-gap-4 d-md-flex d-none">
+					<a data-da=".contacts-footer-mobile, 1200, first" href="#" class="footer__logo">
+						<img src="img/header/logo.svg" alt="Антошка" width="110" height="34">
+					</a>
+					<p data-da=".footer__row, 767, 2" class="footer__copy">© Antoshka.ua 2013–2023. Все права защищены.</p>
+				</div>
+				<div class="d-flex align-items-center flex-column text-center flex-xl-row footer__policy">
+					<a href="#" class="footer__ruls">Правила пользования</a>
+					<a href="#" class="footer__ruls">Политика конфиденциальности</a>
+				</div>
+				<a href="#" class="footer__img" aria-label="Перейти до дизай студії">
+					<svg width="71" height="33" class="style">
+						<use xlink:href="img/svg/icons.svg#style"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+  </div>
+  <div class="popup location-popup" id="location">
+	<div class="location popup-content">
+		<button data-close type="button" class="modal-button-close location__close">
+			<svg width="18" height="18" class="close">
+				<use xlink:href="img/svg/icons.svg#close"></use>
+			</svg>
+		</button>
+		<div class="location__content">
+			<div class="location__title">Выберите свой город</div>
+			<ul class="location__list">
+				<li class="location__item" data-close>
+					<a data-city-id="1" href="#" class="location__value">Киев</a>
+				</li>
+				<li class="location__item _active" data-close>
+					<a data-city-id="2" href="#" class="location__value">Одесса</a>
+				</li>
+				<li class="location__item" data-close>
+					<a data-city-id="3" href="#" class="location__value">Запорожье</a>
+				</li>
+				<li class="location__item" data-close>
+					<a data-city-id="4" href="#" class="location__value">Днепр</a>
+				</li>
+				<li class="location__item" data-close>
+					<a data-city-id="5" href="#" class="location__value">Кривой Рог</a>
+				</li>
+				<li class="location__item" data-close>
+					<a data-city-id="6" href="#" class="location__value">Львов</a>
+				</li>
+			</ul>
+			<form action="../files/header_city/city.json" class="d-flex flex-column form-location location__form">
+				<button type="button" class="text-uppercase d-block d-md-none location__button" data-close>применить</button>
+				<select class="js-example-basic-single" name="location">
+				</select>
+				<div class="form-location__dropdown"></div>
+			</form>
+		</div>
+	</div>
+</div>
+  <div class="fade modal credit-popup" id="credit" tabindex="-1" aria-labelledby="credit" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content credit">
+         <button type="button" class="button modal-button-close credit__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="18" height="18" class="close">
+               <use xlink:href="img/svg/icons.svg#close"></use>
+            </svg>
+         </button>
+         <div class="credit__body">
+            <h2 class="credit__title">Кредит</h2>
+            <div class="d-flex align-items-center justify-content-between credit__row">
+               <div class="d-flex align-items-center bank-credit credit__bank">
+                  <div class="bank-credit__icon">
+                     <img src="img/icons/value-1.svg" alt="img" width="32" height="32">
+                  </div>
+                  <div class="bank-credit__content">
+                     <div class="bank-credit__title">ПриватБанк</div>
+                     <div class="bank-credit__subtitle">Оплата частями</div>
+                     <div class="bank-credit__commission">Комиссия: 0,01%</div>
+                  </div>
+               </div>
+               <div class="credit__payments payments-credit">
+                  <div class="payments-credit__head">
+                     <span>36 платежей</span>
+                     <svg width="9" height="5" viewBox="0 0 9.74 5.87"><path d="M-3282-1a1,1,0,0,1,.707.293l3.163,3.163,3.163-3.163a1,1,0,0,1,1.414,0,1,1,0,0,1,.293.707,1,1,0,0,1-.293.707l-3.867,3.867,0,0a1,1,0,0,1-1.414,0l-3.87-3.87A1,1,0,0,1-3283,0a1,1,0,0,1,.293-.707A1,1,0,0,1-3282-1Z" transform="translate(3283 1)" fill="#4b4da8" opacity="0.5"/>
+                     </svg>
+                  </div>
+                  <ul class="payments-credit__list">
+                     <li>12 платежей</li>
+                     <li>24 платежей</li>
+                     <li>48 платежей</li>
+                  </ul>
+               </div>
+               <div class="credit__price"><span>968</span>/ месяц</div>
+               <button type="button" class="button button-red-small credit__button"><span>Выбрать</span></button>
+            </div>
+            <div class="d-flex align-items-center justify-content-between credit__row">
+               <div class="d-flex align-items-center bank-credit credit__bank">
+                  <div class="bank-credit__icon">
+                     <img src="img/icons/value-2.svg" alt="img" width="32" height="32">
+                  </div>
+                  <div class="bank-credit__content">
+                     <div class="bank-credit__title">ПриватБанк</div>
+                     <div class="bank-credit__subtitle">Оплата частями</div>
+                     <div class="bank-credit__commission">Комиссия: 0,01%</div>
+                  </div>
+               </div>
+               <div class="credit__payments payments-credit">
+                  <div class="payments-credit__head">
+                     <span>36 платежей</span>
+                     <svg width="9" height="5" viewBox="0 0 9.74 5.87">
+                        <path d="M-3282-1a1,1,0,0,1,.707.293l3.163,3.163,3.163-3.163a1,1,0,0,1,1.414,0,1,1,0,0,1,.293.707,1,1,0,0,1-.293.707l-3.867,3.867,0,0a1,1,0,0,1-1.414,0l-3.87-3.87A1,1,0,0,1-3283,0a1,1,0,0,1,.293-.707A1,1,0,0,1-3282-1Z" transform="translate(3283 1)" fill="#4b4da8" opacity="0.5"/>
+                     </svg>
+                  </div>
+                  <ul class="payments-credit__list">
+                     <li>12 платежей</li>
+                     <li>24 платежей</li>
+                     <li>48 платежей</li>
+                  </ul>
+               </div>
+               <div class="credit__price"><span>968</span>/ месяц</div>
+               <button type="button" class="button button-red-small credit__button"><span>Выбрать</span></button>
+            </div>
+            <a href="#" class="credit__more text-center"><span class="info-product__label">Подробные условия
+                  кредитования</span></a>
+         </div>
+      </div>
+   </div>
+</div>
+<div id="gallery" class="popup popup-gallery">
+   <div class="gallery">
+      <button data-close type="button" class="button modal-button-close gallery__close">
+         <svg width="18" height="18" class="close">
+            <use xlink:href="img/svg/icons.svg#close"></use>
+         </svg>
+      </button>
+      <div class="gallery__body">
+         <div class="gallery__content">
+            <div class="d-none d-xl-block subslider-product">
+               <div class="subslider-product__wrapper-gallery">
+                  <div class="sub-gallery-slide subslider-product__slide">
+                     <picture><source srcset="img/product-page/slider/02.webp" type="image/webp"><img src="img/product-page/slider/02.jpg" alt="img" width="84" height="84"></picture>
+                  </div>
+                  <div class="sub-gallery-slide subslider-product__slide">
+                     <picture><source srcset="img/product-page/slider/02.webp" type="image/webp"><img src="img/product-page/slider/02.jpg" alt="img" width="84" height="84"></picture>
+                  </div>
+                  <div class="sub-gallery-slide subslider-product__slide">
+                     <img src="img/icons/icon-video.svg" alt="img" width="32" height="32">
+                  </div>
+                  <div class="sub-gallery-slide subslider-product__slide">
+                     <picture><source srcset="img/product-page/slider/02.webp" type="image/webp"><img src="img/product-page/slider/02.jpg" alt="img" width="84" height="84"></picture>
+                  </div>
+                  <div class="sub-gallery-slide subslider-product__slide">
+                     <picture><source srcset="img/product-page/slider/02.webp" type="image/webp"><img src="img/product-page/slider/02.jpg" alt="img" width="84" height="84"></picture>
+                  </div>
+                  <div class="sub-gallery-slide subslider-product__slide">
+                     <picture><source srcset="img/product-page/slider/02.webp" type="image/webp"><img src="img/product-page/slider/02.jpg" alt="img" width="84" height="84"></picture>
+                  </div>
+                  <div class="sub-gallery-slide subslider-product__slide">
+                     <picture><source srcset="img/product-page/slider/02.webp" type="image/webp"><img src="img/product-page/slider/02.jpg" alt="img" width="84" height="84"></picture>
+                  </div>
+                  <div class="sub-gallery-slide subslider-product__slide">
+                     <picture><source srcset="img/product-page/slider/02.webp" type="image/webp"><img src="img/product-page/slider/02.jpg" alt="img" width="84" height="84"></picture>
+                  </div>
+                  <div class="sub-gallery-slide subslider-product__slide">
+                     <picture><source srcset="img/product-page/slider/02.webp" type="image/webp"><img src="img/product-page/slider/02.jpg" alt="img" width="84" height="84"></picture>
+                  </div>
+                  <div class="sub-gallery-slide subslider-product__slide">
+                     <picture><source srcset="img/product-page/slider/02.webp" type="image/webp"><img src="img/product-page/slider/02.jpg" alt="img" width="84" height="84"></picture>
+                  </div>
+                  <div class="sub-gallery-slide subslider-product__slide">
+                     <picture><source srcset="img/product-page/slider/02.webp" type="image/webp"><img src="img/product-page/slider/02.jpg" alt="img" width="84" height="84"></picture>
+                  </div>
+                  <div class="sub-gallery-slide subslider-product__slide">
+                     <picture><source srcset="img/product-page/slider/02.webp" type="image/webp"><img src="img/product-page/slider/02.jpg" alt="img" width="84" height="84"></picture>
+                  </div>
+               </div>
+            </div>
+            <div class="gallery-product">
+               <div class="gallery-product__wrapper">
+                  <div class="gallery-product__slide">
+                     <div class="zoomable-image">
+                        <picture><source srcset="img/product-page/modals-product/01.webp" type="image/webp"><img src="img/product-page/modals-product/01.jpg" alt="img" width="1054" height="934"></picture>
+                     </div>
+                  </div>
+                  <div class="gallery-product__slide">
+                     <div class="zoomable-image">
+                        <picture><source srcset="img/product-page/modals-product/01.webp" type="image/webp"><img src="img/product-page/modals-product/01.jpg" alt="img" width="1054" height="934"></picture>
+                     </div>
+                  </div>
+                  <div class="gallery-product__slide gallery-product__slide-video product-video">
+                     <span class="product-video-overlay"></span>
+                     <div class="product-video-block">
+                        <button type="button" class="product-video__close"></button>
+                     </div>
+                  </div>
+                  <div class="gallery-product__slide">
+                     <div class="zoomable-image">
+                        <picture><source srcset="img/product-page/modals-product/01.webp" type="image/webp"><img src="img/product-page/modals-product/01.jpg" alt="img" width="1054" height="934"></picture>
+                     </div>
+                  </div>
+                  <div class="gallery-product__slide">
+                     <div class="zoomable-image">
+                        <picture><source srcset="img/product-page/modals-product/01.webp" type="image/webp"><img src="img/product-page/modals-product/01.jpg" alt="img" width="1054" height="934"></picture>
+                     </div>
+                  </div>
+                  <div class="gallery-product__slide">
+                     <div class="zoomable-image">
+                        <picture><source srcset="img/product-page/modals-product/01.webp" type="image/webp"><img src="img/product-page/modals-product/01.jpg" alt="img" width="1054" height="934"></picture>
+                     </div>
+                  </div>
+                  <div class="gallery-product__slide">
+                     <div class="zoomable-image">
+                        <picture><source srcset="img/product-page/modals-product/01.webp" type="image/webp"><img src="img/product-page/modals-product/01.jpg" alt="img" width="1054" height="934"></picture>
+                     </div>
+                  </div>
+                  <div class="gallery-product__slide">
+                     <div class="zoomable-image">
+                        <picture><source srcset="img/product-page/modals-product/01.webp" type="image/webp"><img src="img/product-page/modals-product/01.jpg" alt="img" width="1054" height="934"></picture>
+                     </div>
+                  </div>
+                  <div class="gallery-product__slide">
+                     <div class="zoomable-image">
+                        <picture><source srcset="img/product-page/modals-product/01.webp" type="image/webp"><img src="img/product-page/modals-product/01.jpg" alt="img" width="1054" height="934"></picture>
+                     </div>
+                  </div>
+                  <div class="gallery-product__slide">
+                     <div class="zoomable-image">
+                        <picture><source srcset="img/product-page/modals-product/01.webp" type="image/webp"><img src="img/product-page/modals-product/01.jpg" alt="img" width="1054" height="934"></picture>
+                     </div>
+                  </div>
+                  <div class="gallery-product__slide">
+                     <div class="zoomable-image">
+                        <picture><source srcset="img/product-page/modals-product/01.webp" type="image/webp"><img src="img/product-page/modals-product/01.jpg" alt="img" width="1054" height="934"></picture>
+                     </div>
+                  </div>
+                  <div class="gallery-product__slide">
+                     <div class="zoomable-image">
+                        <picture><source srcset="img/product-page/modals-product/01.webp" type="image/webp"><img src="img/product-page/modals-product/01.jpg" alt="img" width="1054" height="934"></picture>
+                     </div>
+                  </div>
+               </div>             
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="fade modal popup-reviews" id="popup-reviews" tabindex="-1" aria-labelledby="popup-reviews" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content reviews-modal">
+         <button type="button" class="button modal-button-close reviews-modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="18" height="18" class="close">
+               <use xlink:href="img/svg/icons.svg#close"></use>
+            </svg>
+         </button>
+         <div class="d-flex align-items-end reviews-modal__head">
+            <div class="reviews-modal__label">Фото и видео покупателей</div>
+            <div class="d-none d-xl-block reviews-modal__title">LEGO Technic Ford Mustang Shelby GT500 42138</div>
+         </div>
+         <div class="reviews-modal__body">
+            <div class="images-reviews-modal reviews-modal__images slider">
+               <div class="images-reviews-modal__slider">
+                  <div class="images-reviews-modal__slide">
+                     <picture><source srcset="img/product-page/modals-product/02.webp" type="image/webp"><img src="img/product-page/modals-product/02.jpg" alt="img" width="614" height="614"></picture>
+                  </div>
+                  <div class="images-reviews-modal__slide images-reviews-modal__slide-video product-video">
+                     <span class="product-video-overlay"></span>
+                     <div class="product-video-block">
+                        <button type="button" class="product-video__close"></button>
+                     </div>
+                  </div>         
+                  <div class="images-reviews-modal__slide">
+                     <picture><source srcset="img/product-page/modals-product/02.webp" type="image/webp"><img src="img/product-page/modals-product/02.jpg" alt="img" width="614" height="614"></picture>
+                  </div>        
+               </div>  
+               <div class="images-reviews-modal__footer">
+                  <div class="images-reviews-modal__pagination">
+                     <span class="images-reviews-modal__number">2 из 25</span>
+                  </div>
+                  <a href="#" class="images-reviews-modal__original"><span>Открыть оригинал</span></a>
+               </div>
+            </div>
+            <article class="review-block reviews-product__review">
+               <div data-scrollbar class="review-block__overlay">
+                  <div class="d-flex align-items-end head-review review-block__head">
+                     <div class="flex-grow-1 head-review__column">
+                        <div class="d-flex align-items-center flex-column head-review__avatar">
+                           <div class="head-review__img">
+                              <img src="img/product-page/good-comment.svg" alt="avatar">
+                           </div>
+                        </div>
+                        <div class="head-review__content">
+                           <h2 class="head-review__label">Это лучшее что было в моей жизни</h2>
+                           <div class="d-flex align-items-md-center flex-wrap head-review__line">
+                              <div class="head-review__status">Павел рекомендует</div>
+                              <div class="head-review__line-second">
+                                 <div class="head-review__stars">
+                                    <svg width="76" height="11" class="rating">
+                                       <use xlink:href="img/svg/icons.svg#star-1"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="head-review__right">
+                        <div class="head-review__cart tooltip">
+                           <button type="button" class="head-review__cart-item tooltip-head" aria-label="товар был добавлен пользователем в корзину">
+                              <svg width="16" height="16">
+                                 <use xlink:href="img/svg/icons.svg#added-cart"></use>
+                              </svg>                                              
+                           </button>
+                           <div class="head-review__cart-text tooltip-text tooltip-text-popup">
+                              <p>Товар куплен в интернет магазине</p>
+                           </div>
+                        </div>
+                        <time datetime="2022-09">21 октября 2022</time>
+                     </div>
+                  </div>
+                  <div class="review-block__body">
+                     <p class="review-block__text">Собирать было очень интересно и довольно сложно по сравнению с 42114, 42099, 42096. Блокируемый дифференциал это что то новое. Но и в нем кроется недостаток. Недостаточное усиление механизма приводит к треску под нагрузкой, можно даже повредить запчасти. У кого то в наборе он меньше у кого то трещит почти сразу.</p>
+                     <div class="review-block__section">
+                        <div class="review-block__label">Достоинства</div>
+                        <p class="review-block__desc">Интересная сборка</p>
+                     </div>
+                     <div class="review-block__section">
+                        <div class="review-block__label">Недостатки</div>
+                        <p class="review-block__desc">Недостаток дизайна заднего моста</p>
+                     </div>
+                     <ul class="d-flex align-items-center flex-wrap review-block__media">
+                        <li><picture><source srcset="img/product-page/media/01.webp" type="image/webp"><img src="img/product-page/media/01.png" alt="img" width="80" height="80"></picture></li>
+                        <li><picture><source srcset="img/product-page/media/02.webp" type="image/webp"><img src="img/product-page/media/02.png" alt="img" width="80" height="80"></picture></li>
+                        <li class="review-block__media-video"></li>
+                     </ul>
+                     <div class="d-flex align-items-center justify-content-between actions-review review-block__actions">
+                        <div class="d-flex align-items-center flex-wrap actions-review__left">
+                           <a href="#" class="info-product__label actions-review__label"><span>Ответить</span></a>
+                           <div class="d-flex align-items-center actions-review__ans">
+                              <a href="#" class="info-product__label">3 ответа</a>
+                           </div>
+                        </div>
+                        <div class="d-flex align-items-center flex-wrap actions-review__right">
+                           <p class="d-none actions-review__caption d-sm-block">Полезен ли отзыв?</p>
+                           <div class="d-flex align-items-center actions-review__estimate estimate-review">
+                              <div class="d-flex align-items-center estimate-review__item">
+                                 <button type="button" class="button estimate-review__icon estimate-review__icon-like" aria-label="Оценить положительно">
+                                    <svg width="16" height="16" class="like">
+                                       <use xlink:href="img/svg/icons.svg#like"></use>
+                                    </svg>                                                    
+                                 </button>
+                                 <div class="estimate-review__values">0</div>
+                              </div>
+                              <div class="d-flex align-items-center estimate-review__item">
+                                 <button type="button" class="button estimate-review__icon estimate-review__icon-bad" aria-label="Оценить негативно">
+                                    <svg width="16" height="16" class="dislike">
+                                       <use xlink:href="img/svg/icons.svg#dislike"></use>
+                                    </svg>                                                   
+                                 </button>
+                                 <div class="estimate-review__values">5</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="answer-review review-block__answer">
+                        <div class="answer-review__content">
+                           <div class="d-flex align-items-center justify-content-between answer-review__line">
+                              <div class="answer-review__name">Алексей</div>
+                              <time datetime="2022-09">21 октября 2022</time>
+                           </div>
+                           <p class="answer-review__text">Отличный набор. Спасибо розетке за отличную скидку и возможность покупки в оплату частями на 2 года. Иначе вряд ли взял. Доставка быстрая, но коробка была слегка примята, но возврат не делал, т.к. цена и оплата частями компенсировали этот недостаток.</p>
+                        </div>
+                     </div>
+                     <div class="answer-review review-block__answer">
+                        <div class="answer-review__content">
+                           <div class="d-flex align-items-center justify-content-between answer-review__line">
+                              <div class="answer-review__name">Генадий</div>
+                              <time datetime="2022-09">21 октября 2022</time>
+                           </div>
+                           <p class="answer-review__text">Явно не для начинающих.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </article>
+         </div>
+      </div>
+   </div>
+</div>
+</body>
+
+</html>

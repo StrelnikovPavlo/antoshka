@@ -1,0 +1,5 @@
+<svg id="slider-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9.67" height="9" viewBox="0 0 9.67 9">
+  <g transform="translate(0 0)" clip-path="url(#clip-path)">
+    <path d="M9.523,4.946l-.008.009a.8.8,0,0,1-.078.086L5.685,8.779A.75.75,0,0,1,4.554,7.8l.073-.084L7.105,5.249H.748a.75.75,0,0,1-.1-1.493l.1-.006H7.1L4.627,1.283A.752.752,0,0,1,4.552.306L4.625.221A.75.75,0,0,1,5.6.146l.084.073L9.449,3.967a.751.751,0,0,1,.074.979" fill="#200e32"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg id="Go" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="36" viewBox="0 0 30 36">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1036" data-name="Rectangle 1036" width="8.608" height="6.238" transform="translate(0 0)" fill="#64b64b"/>
+    </clipPath>
+  </defs>
+  <g id="Rectangle_98" data-name="Rectangle 98" fill="#fff" stroke="#64b64b" stroke-width="1">
+    <rect width="30" height="36" rx="6" stroke="none"/>
+    <rect x="0.5" y="0.5" width="29" height="35" rx="5.5" fill="none"/>
+  </g>
+  <g id="Group_3691" data-name="Group 3691" transform="translate(11 15)">
+    <g id="Group_3690" data-name="Group 3690" clip-path="url(#clip-path)">
+      <path id="Path_1043" data-name="Path 1043" d="M2.668,6.095l-.083-.077L.21,3.648a.75.75,0,0,1,.977-1.13l.084.073L3.114,4.433,7.33.218a.75.75,0,0,1,1.133.976l-.073.085L3.645,6.018a.75.75,0,0,1-.977.073Z" fill="#64b64b"/>
+    </g>
+  </g>
+</svg>

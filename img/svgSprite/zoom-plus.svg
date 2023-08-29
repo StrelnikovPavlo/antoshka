@@ -1,0 +1,10 @@
+<svg id="zoom-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <g transform="translate(-591 -54)">
+    <circle cx="8" cy="8" r="8" transform="translate(592 55)" fill="#fff"/>
+    <g transform="translate(591 54)">
+      <g clip-path="url(#clip-path)">
+        <path d="M9,6a1,1,0,0,1,1,1V8h1a1,1,0,0,1,0,2H10v1a1,1,0,0,1-2,0V10H7A1,1,0,0,1,7,8H8V7A1,1,0,0,1,9,6M0,9a9,9,0,1,1,16.032,5.618l5.675,5.675a1,1,0,0,1-1.414,1.414l-5.675-5.675A9,9,0,0,1,0,9M9,2a7,7,0,1,0,7,7A7,7,0,0,0,9,2" fill="#f04137" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+{
+   "search": [
+      {
+         "suggestions": "lego",
+         "image": "img/header/search/product-1.png",
+         "name": "LEGO City Селфи на каскадерском мотоцикле 60309",
+         "price": "1968 ₴",
+         "oldprice": "2400 ₴"
+      },
+      {
+         "suggestions": "lego <b>city</b>",
+         "image": "img/header/search/product-4.png",
+         "name": "LEGO Super Mario Набор усилений «Марио-лягушка» 71392",
+         "price": "1968 ₴",
+         "oldprice": "2400 ₴"
+      },
+      {
+         "suggestions": "lego <b>friends</b>",
+         "image": "img/header/search/product-3.png",
+         "name": "LEGO Creator Ford Mustang 10265",
+         "price": "1968 ₴",
+         "oldprice": "2400 ₴"
+      },
+      {
+         "suggestions": "lego <b>star</b>",
+         "image": "img/header/search/product-2.png",
+         "name": "LEGO City Селфи на каскадерском мотоцикле 60309",
+         "price": "1968 ₴",
+         "oldprice": "2400 ₴"
+      }
+   ]
+}
