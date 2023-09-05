@@ -6,15 +6,15 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="description" content="Публічний договір Приватного Підприємства Торгівельна Фірма «Антошка»">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/delivery.min.css?_v=20230904081831">
-  <link rel="stylesheet" href="css/checkout.min.css?_v=20230904081831">
+  <link rel="stylesheet" href="css/delivery.min.css?_v=20230905175412">
+  <link rel="stylesheet" href="css/checkout.min.css?_v=20230905175412">
   <link rel="preload" as="image" href="img/buttontotop/uph.svg">
-  <script defer="defer" src="js/jguery.min.js?_v=20230904081831"></script>
-  <script defer="defer" src="js/select2.min.js?_v=20230904081831"></script>
-  <script defer="defer" src="js/bootstrap.min.js?_v=20230904081831"></script>
-  <script defer="defer" src="js/popup.min.js?_v=20230904081831"></script>
-  <script defer="defer" src="js/functions.min.js?_v=20230904081831"></script>
-  <script defer="defer" src="js/delivery.min.js?_v=20230904081831"></script>
+  <script defer="defer" src="js/jguery.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/select2.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/bootstrap.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/popup.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/functions.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/delivery.min.js?_v=20230905175412"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -26,7 +26,7 @@
       <h1><b>Оформление заказа</b></h1>
       <nav class="header__menu menu-header">
         <ul class="d-flex align-items-center menu-header__list">
-          <li class="menu-header__item">
+          <li class="menu-header__item-hover">
             <a href="#" class="d-flex align-items-center menu-header__link">
               Связаться
               <svg width="9" height="6" class="arrow">
@@ -67,7 +67,7 @@
   </header>
   <main class="page">
     <section class="d-flex align-items-center flex-column checkout justify-content-start">
-      <div class="d-flex justify-content-between flex-wrap align-items-start checkout__inner">
+      <div class="d-flex align-items-start checkout__inner flex-wrap">
         <div class="d-flex align-items-center flex-column checkout__inner-content">
           <article class="checkout__inner-content--client">
             <div class="d-flex align-items-center justify-content-center switch-client">
@@ -727,15 +727,17 @@
 					<a data-city-id="6" href="#" class="location__value">Львов</a>
 				</li>
 			</ul>
-			<form action="../files/header_city/city.json" class="d-flex flex-column form-location location__form">
-				<button type="button" class="d-block d-md-none location__button text-uppercase" data-close>применить</button>
-				<select class="js-example-basic-single" name="location">
-				</select>
+			<form action="https://m2amida.antoshka.ua/rest/V1/geo/city" class="d-flex flex-column form-location location__form" data-url="https://m2amida.antoshka.ua/rest/V1/geo/city">
+				<button type="button" class="d-block d-md-none location__button text-uppercase" data-close>
+					применить
+				</button>
+				<select class="js-example-basic-single" name="location"></select>
 				<div class="form-location__dropdown"></div>
 			</form>
 		</div>
 	</div>
 </div>
+
 <div class="fade modal credit-popup" id="credit" tabindex="-1" aria-labelledby="credit" aria-hidden="true">
    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content credit">
@@ -873,7 +875,7 @@
                      </div>
                      <div class="head-review__right">
                         <div class="head-review__cart tooltip">
-                           <button type="button" class="head-review__cart-item tooltip-head" aria-label="товар был добавлен пользователем в корзину"></button>
+                           <div class="head-review__cart-item tooltip-head"></div>
                            <div class="head-review__cart-text tooltip-text tooltip-text-popup">
                               <p>Товар куплен в интернет магазине</p>
                            </div>

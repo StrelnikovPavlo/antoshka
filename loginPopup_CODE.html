@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="Школа будущих мам Фірма «Антошка»">
+		<title>login popup</title>
+		<script defer="defer" src="js/jguery.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/select2.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/bootstrap.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/header.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/footer.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/product.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/popup.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/functions.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/delivery.min.js?_v=20230905175412"></script>
+
+		<link rel="stylesheet" href="css/delivery.min.css?_v=20230905175412">
+		<link rel="preload" as="image" href="img/buttontotop/uph.svg">
+		<link rel="stylesheet" href="css/loginpopup.min.css?_v=20230905175412">
+	</head>
+<body>
+    <div class="content__2">
+			<div class="login">
+				<div class="login__inner">
+					<div class="login__heading">
+						<h2 class="login__heading-title">Вход в личный кабинет</h2>
+						<img class="login__heading-close" src="./img/loginPopup/icons/close-ico.svg" alt="close icon">
+					</div>
+					<div class="login__content">
+						<div class="login__content-number">
+							<img class="login__content-number-img" src="./img/loginPopup/icons/edit-ico.svg" alt="edit icon">
+							<p class="login__content-number-para">+38 (099) 787-55-55</p>
+						</div>
+						<p class="code-sent-info">Вам выслан SMS/Viber с кодом. Укажите его в поле ниже</p>
+						<div class="code-auth field">
+							<input type="text" placeholder="Код из 4 цифр" id="code-auth" autocomplete="off">
+							<span>Код из 4 цифр</span>
+							<div class="success"></div>
+							<div class="error"></div>
+							<p>Введён неправильный код, попробуйте еще раз</p>
+						</div>
+						<div class="login__content-wrapper">
+							<button class="auth_next" type="button" disabled="disabled">Далее</button>
+						</div>
+						<div class="login__content-additional">
+							<a class="login__content-additional-link" href="#">Отправить код повторно</a>
+						</div>
+					</div>
+
+					<div class="login__footer">
+						<a class="login__footer-link" href="#">Регистрация для новых пользователей</a>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <div class="content__4">
+			<div class="login">
+				<div class="login__inner">
+					<div class="login__heading">
+						<h2 class="login__heading-title">Вход в личный кабинет</h2>
+						<img class="login__heading-close" src="./img/loginPopup/icons/close-ico.svg" alt="close icon">
+					</div>
+					<div class="login__content">
+						<div class="login__content-wait">
+							<p class="login__content-wait-para">
+								<strong>Превышен лимит по попыткам ввода кода.</strong>
+								<br>
+								Повторная возможность отправки SMS / Viber будет
+								<br>
+								доступна через
+							</p>
+							<div class="login__content-wait-container">
+								<div class="login__content-wait-img-container">
+									<img class="login__content-wait-img" src="./img/loginPopup/toy.png" alt="image of a toy">
+								</div>
+								<div class="login__content-wait-sec-container">
+									<p class="login__content-wait-sec">01:15</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="login__footer">
+						<a class="login__footer-link" href="#">Регистрация для новых пользователей</a>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

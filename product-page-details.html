@@ -1,30 +1,31 @@
 <!doctype html>
-<html lang="uk">
-    <head>
-        <title>Empty Cart</title>
-        <meta charset="UTF-8">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="description" content="Публічний договір Приватного Підприємства Торгівельна Фірма «Антошка»">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="css/delivery.min.css?_v=20230905175412">
-        <link rel="preload" as="image" href="img/buttontotop/uph.svg">
-     
-        <script defer="defer" src="js/jguery.min.js?_v=20230905175412"></script>
-        <script defer="defer" src="js/slick.min.js?_v=20230905175412"></script>
-        <script defer="defer" src="js/slider_product.min.js?_v=20230905175412"></script>
-        <script defer="defer" src="js/select2.min.js?_v=20230905175412"></script>
-        <script defer="defer" src="js/bootstrap.min.js?_v=20230905175412"></script>
-        <script defer="defer" src="js/header.min.js?_v=20230905175412"></script>
-        <script defer="defer" src="js/footer.min.js?_v=20230905175412"></script>
-        <script defer="defer" src="js/product.min.js?_v=20230905175412"></script>
-        <script defer="defer" src="js/popup.min.js?_v=20230905175412"></script>
-        <script defer="defer" src="js/functions.min.js?_v=20230905175412"></script>
-        <script defer="defer" src="js/delivery.min.js?_v=20230905175412"></script>
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js?_v=20230905175412"></script>
-     </head>
+<html lang="ru">
+
+<head>
+  <title>Product Page Details</title>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Публічний договір Приватного Підприємства Торгівельна Фірма «Антошка»">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/product.min.css?_v=20230905175412">
+  <link rel="stylesheet" href="css/product/tabs.min.css?_v=20230905175412">
+  <link rel="preload" as="image" href="img/buttontotop/uph.svg">
+  <script defer="defer" src="js/jguery.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/slick.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/slider_product.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/select2.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/bootstrap.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/header.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/footer.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/product.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/popup.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/functions.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/showmore.min.js?_v=20230905175412"></script>
+</head>
+
 <body>
-<div class="wrapper">
-    <header class="header">
+<div class="page-product wrapper">
+  <header class="header">
 	<div class="header__top">
 		<div class="container-xxl">
 			<div class="d-flex align-items-center justify-content-between column-gap-4">
@@ -192,7 +193,7 @@
 				<div class="nav-bar__head">
 					<a href="#" class="nav-bar__logo"><img src="img/header/logo.svg" alt="Антошка" width="110" height="34"></a>
 					<div class="nav-bar__langs">
-						<a href="#" class="_active nav-bar__lang text-uppercase">UA</a>
+						<a href="#" class="text-uppercase nav-bar__lang _active">UA</a>
 						<a href="#" class="text-uppercase nav-bar__lang">RU</a>
 					</div>
 				</div>
@@ -358,7 +359,7 @@
 				<a data-da=".header__content, 1199, 1" href="#" class="logo">
 					<img src="img/header/logo.svg" alt="Антошка" width="110" height="34">
 				</a>
-				<button data-da=".nav-bar__actions, 1199, 1" type="button" class="d-flex align-items-center header__catalog text-left">Каталог</button>
+				<button data-da=".nav-bar__actions, 1199, 1" type="button" class="d-flex align-items-center text-left header__catalog">Каталог</button>
 				<form action="#" class="d-flex flex-md-grow-1 form-header header__form">
 					<div class="d-flex form-header__row form-header__row-main">
 						<div class="form-header__button"></div>
@@ -404,7 +405,7 @@
 					<a href="#" class="dropdown-form__logo">
 						<img src="img/header/logo.svg" alt="Антошка" width="169" height="66">
 					</a>
-					<form action="../files/header_search/search.json" class="d-flex align-items-center dropdown-form__search flex-grow-1">
+					<form action="../files/header_search/search.json" class="d-flex align-items-center flex-grow-1 dropdown-form__search">
 						<div class="d-flex flex-grow-1 dropdown-form__input form-header__row">
 							<button type="submit" class="form-header__button"></button>
 							<input autocomplete="off" type="text" name="search" placeholder="Я ищу..." class="form-header__input form-header__input-dropdown">
@@ -470,28 +471,149 @@
 		</div>
 	</div>
 </header>
-    <main class="page">
-        <section class="d-flex align-items-center flex-column empty-cart">
-            <div class="d-flex empty-cart__header">
-                <div class="d-flex align-items-center justify-content-between switcher">
-                    <button class="_active header__item">
-                        Корзина <span>(0)</span>
-                    </button>
-                    <button class="header__item">
-                        Просмотренное <span>(5)</span>
-                    </button>
+  <main class="page">
+    <nav class="breadcrumbs">
+      <div class="d-flex align-items-center breadcrumbs__container container-xxl">
+        <ul class="d-flex align-items-center flex-grow-1 breadcrumbs__list text-left">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Игрушки</a></li>
+          <li><a href="#">LEGO</a></li>
+          <li class="_last"><a href="#">LEGO Technic</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="about" class="product">
+      <div class="product__title">
+        <div class="d-flex column-gap-3 align-items-start container-xxl">
+          <h1 class="flex-grow-1 title-page">LEGO Technic Ford Mustang Shelby GT500 42138</h1>
+          <a data-da=".breadcrumbs__container, 767" href="#" class="tooltip product__brand">
+            <picture><source srcset="img/product-page/brand.webp" type="image/webp"><img src="img/product-page/brand.png" alt="brand" width="42" height="42" class="tooltip-head"></picture>
+            <div class="tooltip-text product__brand-tooltip">
+              <p>На страницу бренда</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <nav class="nav-product product__nav">
+        <div class="container-xxl">
+          <ul class="d-flex align-items-center nav-product__list">
+            <li><a href="#" data-goto="about">О товаре</a></li>
+            <li><a href="#" data-goto="characteristics" class="_navigator-active">Характеристики</a></li>
+            <li><a href="#" data-goto="reviews">Отзывы<span>15</span></a></li>
+            <li><a href="#" data-goto="reviews">Видеообзоры</a></li>
+            <li><a href="#" data-goto="bestsellers">Наличие в магазинах</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="body-product product__body">
+        <div class="container-xxl">
+          <div class="d-block align-items-xl-start body-product__row d-xl-flex">
+            <div class="body-product__content">
+              <section id="characteristics" class="body-product__characteristics characteristics-product">
+  <div class="characteristics-product__table">
+    <table>
+      <tr>
+        <th>Артикул</th>
+        <td>76912</td>
+      </tr>
+      <tr>
+        <th>Код товара</th>
+        <td>1000639995</td>
+      </tr>
+      <tr>
+        <th>Страна-производитель</th>
+        <td>Чехия</td>
+      </tr>
+      <tr>
+        <th>Страна производства</th>
+        <td>Чехия</td>
+      </tr>
+      <tr>
+        <th>Серия LEGO</th>
+        <td><span class="underline">Speed Champions</span></td>
+      </tr>
+      <tr>
+        <th>Тип конструктора</th>
+        <td><span class="underline">блочные</span></td>
+      </tr>
+      <tr>
+        <th>Тематика конструктора</th>
+        <td><span class="underline">машина</span></td>
+      </tr>
+      <tr>
+        <th>Электронные элементы</th>
+        <td>1000639995</td>
+      </tr>
+      <tr>
+        <th>Пол</th>
+        <td>мальчик, девочка</td>
+      </tr>
+      <tr>
+        <th>Габариты упаковки</th>
+        <td>6см x 14см x 26см</td>
+      </tr>
+      <tr>
+        <th>Вес упаковки</th>
+        <td>0,36 кг</td>
+      </tr>
+    </table>
+  </div>
+  <div class="d-flex flex-wrap align-items-sm-center characteristics-product__actions">
+    <a href="#" class="characteristics-product__more characteristics-product__more-mistakes">
+      <span class="info-product__label">Нашли ошибку в описании?</span>
+    </a>
+    <a href="#" download class="characteristics-product__more characteristics-product__more-instruction">
+      <span class="info-product__label">Скачать инструкцию</span>
+    </a>
+  </div>
+</section>
+            </div>
+            <div class="d-none body-product__perview d-xl-inline-block perview-product">
+              <div class="perview-product__head">
+                <div class="perview-product__img">
+                  <picture><source srcset="img/product-page/perview.webp" type="image/webp"><img src="img/product-page/perview.jpg" alt="img"></picture>
                 </div>
+                <button type="button" class="button favorite info-product__favorite perview-product__favorite" aria-label="Избранное">
+                  <svg width="20" height="20" class="favoriteun">
+                    <use xlink:href="img/svg/icons.svg#favoriteun"></use>
+                  </svg>
+                  <span class="favorite-tooltip">Добавить в избранное</span>
+                </button>
+              </div>
+              <div class="perview-product__body">
+                <div class="perview-product__title">Машинка Jada Toys Охотники за привидениями ЕКТО-1 1:24
+                </div>
+                <div class="d-flex align-items-end justify-content-between perview-product__row">
+                  <div class="product-catalog__prices">
+                    <div class="product-catalog__price">
+                      <p class="d-flex align-items-end">1968<span>₴</span></p>
+                    </div>
+                    <div class="product-catalog__price-old">
+                      <div class="promo">-20%</div>
+                      <span>2400 ₴</span>
+                    </div>
+                  </div>
+                  <div class="product-catalog__bonus perview-product__bonus">+ бонусы до 35 ₴</div>
+                </div>
+                <button type="button" class="button button-red perview-product__cart"><span>В корзину</span></button>
+                <a href="#" class="button button-violet-line perview-product__buy"><span>Купить сейчас</span></a>
+              </div>
             </div>
-            <div class="empty-cart__content">
-                <article class="d-flex align-items-center flex-column empty-cart__content--inner">
-                  <lottie-player background="transparent" speed="1" style="width: 104px; height: 132px;" loop autoplay></lottie-player>
-                    <h2><b>В корзине нет товаров</b></h2>
-                    <p><a href="#">Войдите</a>, чтобы увидеть товары добавленные на других устройствах</p>
-                    <button><b>Продолжить покупки</b></button>
-                </article>
-            </div>
-        </section>
-        <div id="bestsellers" class="bestsellers">
+          </div>
+        </div>
+      </div>
+      <div class="d-flex d-xl-none product__fixed">
+        <div class="product__fixed-price">1968</div>
+      </div>
+      <div data-da=".product__fixed, 1199" class="d-flex align-content-center flex-xl-column info-product__actions">
+        <button type="button" class="button button-red info-product__cart"><span>В корзину</span></button>
+        <button type="button" class="button button-violet-line info-product__buy"><span>Купить сейчас</span></button>
+      </div>
+      <div class="button-top" tabindex="0">
+        <div class="button-top__img"></div>
+      </div>
+    </section>
+    <div id="bestsellers" class="bestsellers">
    <div class="container-xxl">
       <div class="d-flex align-items-end justify-content-between bestsellers__header">
          <div class="section-label bestsellers__title">Хиты продаж</div>
@@ -670,7 +792,7 @@
       </div>
    </div>
 </div>
-        <div class="browsed">
+    <div class="browsed">
    <div class="container-xxl">
       <div class="browsed__body">
          <div class="d-flex align-items-center justify-content-between browsed__head">
@@ -868,7 +990,7 @@
       </div>
    </div>
 </div>
-        <div class="mailto">
+    <div class="mailto">
    <div class="mailto__inner text-center">
       <div class="mailto__content">
          <div class="mailto__title title-section">Подписывайтесь на рассылку!</div>
@@ -880,11 +1002,8 @@
       </div>
    </div>
 </div>
-        <div class="button-top" tabindex="0">
-            <div class="button-top__img"></div>
-        </div>
-    </main>
-    <footer class="footer">
+  </main>
+  <footer class="footer">
 	<div class="footer__top top-footer">
 		<div class="container-xxl">
 			<div class="row top-footer__inner">
@@ -1114,7 +1233,7 @@
 </div>
 <div class="location-popup popup" id="location">
 	<div class="location popup-content">
-		<button data-close type="button" class="location__close modal-button-close">
+		<button data-close type="button" class="modal-button-close location__close">
 			<svg width="18" height="18" class="close">
 				<use xlink:href="img/svg/icons.svg#close"></use>
 			</svg>
@@ -1152,5 +1271,212 @@
 	</div>
 </div>
 
+<div class="fade modal credit-popup" id="credit" tabindex="-1" aria-labelledby="credit" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content credit">
+         <button type="button" class="button modal-button-close credit__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="18" height="18" class="close">
+               <use xlink:href="img/svg/icons.svg#close"></use>
+            </svg>
+         </button>
+         <div class="credit__body">
+            <h2 class="credit__title">Кредит</h2>
+            <div class="d-flex align-items-center justify-content-between credit__row">
+               <div class="d-flex align-items-center bank-credit credit__bank">
+                  <div class="bank-credit__icon">
+                     <img src="img/icons/value-1.svg" alt="img" width="32" height="32">
+                  </div>
+                  <div class="bank-credit__content">
+                     <div class="bank-credit__title">ПриватБанк</div>
+                     <div class="bank-credit__subtitle">Оплата частями</div>
+                     <div class="bank-credit__commission">Комиссия: 0,01%</div>
+                  </div>
+               </div>
+               <div class="credit__payments payments-credit">
+                  <div class="payments-credit__head">
+                     <span>36 платежей</span>
+                  </div>
+                  <ul class="payments-credit__list">
+                     <li>12 платежей</li>
+                     <li>24 платежей</li>
+                     <li>48 платежей</li>
+                  </ul>
+               </div>
+               <div class="credit__price"><span>968</span>/ месяц</div>
+               <button type="button" class="button button-red-small credit__button"><span>Выбрать</span></button>
+            </div>
+            <div class="d-flex align-items-center justify-content-between credit__row">
+               <div class="d-flex align-items-center bank-credit credit__bank">
+                  <div class="bank-credit__icon">
+                     <img src="img/icons/value-2.svg" alt="img" width="32" height="32">
+                  </div>
+                  <div class="bank-credit__content">
+                     <div class="bank-credit__title">ПриватБанк</div>
+                     <div class="bank-credit__subtitle">Оплата частями</div>
+                     <div class="bank-credit__commission">Комиссия: 0,01%</div>
+                  </div>
+               </div>
+               <div class="credit__payments payments-credit">
+                  <div class="payments-credit__head">
+                     <span>36 платежей</span>
+                  </div>
+                  <ul class="payments-credit__list">
+                     <li>12 платежей</li>
+                     <li>24 платежей</li>
+                     <li>48 платежей</li>
+                  </ul>
+               </div>
+               <div class="credit__price"><span>968</span>/ месяц</div>
+               <button type="button" class="button button-red-small credit__button"><span>Выбрать</span></button>
+            </div>
+            <a href="#" class="credit__more text-center"><span class="info-product__label">Подробные условия кредитования</span></a>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="fade modal popup-reviews" id="popup-reviews" tabindex="-1" aria-labelledby="popup-reviews" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content reviews-modal">
+         <button type="button" class="button modal-button-close reviews-modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="18" height="18" class="close">
+               <use xlink:href="img/svg/icons.svg#close"></use>
+            </svg>
+         </button>
+         <div class="d-flex align-items-end reviews-modal__head">
+            <div class="reviews-modal__label">Фото и видео покупателей</div>
+            <div class="d-none d-xl-block reviews-modal__title">LEGO Technic Ford Mustang Shelby GT500 42138</div>
+         </div>
+         <div class="reviews-modal__body">
+            <div class="images-reviews-modal reviews-modal__images slider">
+               <div class="images-reviews-modal__slider">
+                  <div class="images-reviews-modal__slide">
+                     <picture>
+                        <source srcset="img/product-page/modals-product/02.jpg" type="image/webp">
+                        <img data-lazy="img/product-page/modals-product/02.jpg" alt="img" width="614" height="614" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+                     </picture>
+                     <noscript>
+                        <picture>
+                           <source srcset="img/product-page/modals-product/02.jpg" type="image/webp">
+                           <img src="img/product-page/modals-product/02.jpg" alt="img" width="614" height="614">
+                        </picture>
+                     </noscript>
+                  </div>
+                  <div class="images-reviews-modal__slide images-reviews-modal__slide-video product-video">
+                     <span class="product-video-overlay"></span>
+                     <div class="product-video-block">
+                        <button type="button" class="product-video__close"></button>
+                     </div>
+                  </div>         
+                  <div class="images-reviews-modal__slide">
+                     <picture>
+                        <source srcset="img/product-page/modals-product/02.jpg" type="image/webp">
+                        <img data-lazy="img/product-page/modals-product/02.jpg" alt="img" width="614" height="614" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+                     </picture>
+                     <noscript>
+                        <picture>
+                           <source srcset="img/product-page/modals-product/02.jpg" type="image/webp">
+                           <img src="img/product-page/modals-product/02.jpg" alt="img" width="614" height="614">
+                        </picture>
+                     </noscript>
+                  </div>        
+               </div>  
+               <div class="images-reviews-modal__footer">
+                  <div class="images-reviews-modal__pagination">
+                     <span class="images-reviews-modal__number">2 из 25</span>
+                  </div>
+                  <a href="#" class="images-reviews-modal__original"><span>Открыть оригинал</span></a>
+               </div>
+            </div>
+            <article class="review-block reviews-product__review">
+               <div data-scrollbar class="review-block__overlay">
+                  <div class="d-flex align-items-end head-review review-block__head">
+                     <div class="flex-grow-1 head-review__column">
+                        <div class="d-flex align-items-center flex-column head-review__avatar">
+                           <div class="head-review__img">
+                              <img src="img/product-page/good-comment.svg" alt="avatar">
+                           </div>
+                        </div>
+                        <div class="head-review__content">
+                           <h2 class="head-review__label">Это лучшее что было в моей жизни</h2>
+                           <div class="d-flex flex-wrap align-items-md-center head-review__line">
+                              <div class="head-review__status">Павел рекомендует</div>
+                              <div class="head-review__line-second">
+                                 <div class="product-catalog__stars stars-1"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="head-review__right">
+                        <div class="tooltip head-review__cart">
+                           <div class="tooltip-head head-review__cart-item"></div>
+                           <div class="tooltip-text head-review__cart-text tooltip-text-popup">
+                              <p>Товар куплен в интернет магазине</p>
+                           </div>
+                        </div>
+                        <time datetime="2022-09">21 октября 2022</time>
+                     </div>
+                  </div>
+                  <div class="review-block__body">
+                     <p class="review-block__text">Собирать было очень интересно и довольно сложно по сравнению с 42114, 42099, 42096. Блокируемый дифференциал это что то новое. Но и в нем кроется недостаток. Недостаточное усиление механизма приводит к треску под нагрузкой, можно даже повредить запчасти. У кого то в наборе он меньше у кого то трещит почти сразу.</p>
+                     <div class="review-block__section">
+                        <div class="review-block__label">Достоинства</div>
+                        <p class="review-block__desc">Интересная сборка</p>
+                     </div>
+                     <div class="review-block__section">
+                        <div class="review-block__label">Недостатки</div>
+                        <p class="review-block__desc">Недостаток дизайна заднего моста</p>
+                     </div>
+                     <ul class="d-flex align-items-center flex-wrap review-block__media">
+                        <li><picture><source srcset="img/product-page/media/01.webp" type="image/webp"><img src="img/product-page/media/01.png" alt="img" width="80" height="80"></picture></li>
+                        <li><picture><source srcset="img/product-page/media/02.webp" type="image/webp"><img src="img/product-page/media/02.png" alt="img" width="80" height="80"></picture></li>
+                        <li class="review-block__media-video"></li>
+                     </ul>
+                     <div class="d-flex align-items-center justify-content-between actions-review review-block__actions">
+                        <div class="d-flex align-items-center flex-wrap actions-review__left">
+                           <a href="#" class="info-product__label actions-review__label"><span>Ответить</span></a>
+                           <div class="d-flex align-items-center actions-review__ans">
+                              <a href="#" class="info-product__label">3 ответа</a>
+                           </div>
+                        </div>
+                        <div class="d-flex align-items-center flex-wrap actions-review__right">
+                           <p class="d-none actions-review__caption d-sm-block">Полезен ли отзыв?</p>
+                           <div class="d-flex align-items-center actions-review__estimate estimate-review">
+                              <div class="d-flex align-items-center estimate-review__item">
+                                 <button type="button" class="button estimate-review__icon estimate-review__icon-like" aria-label="Оценить положительно"></button>
+                                 <div class="estimate-review__values">0</div>
+                              </div>
+                              <div class="d-flex align-items-center estimate-review__item">
+                                 <button type="button" class="button estimate-review__icon estimate-review__icon-bad" aria-label="Оценить негативно"></button>
+                                 <div class="estimate-review__values">5</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="answer-review review-block__answer">
+                        <div class="answer-review__content">
+                           <div class="d-flex align-items-center justify-content-between answer-review__line">
+                              <div class="answer-review__name">Алексей</div>
+                              <time datetime="2022-09">21 октября 2022</time>
+                           </div>
+                           <p class="answer-review__text">Отличный набор. Спасибо розетке за отличную скидку и возможность покупки в оплату частями на 2 года. Иначе вряд ли взял. Доставка быстрая, но коробка была слегка примята, но возврат не делал, т.к. цена и оплата частями компенсировали этот недостаток.</p>
+                        </div>
+                     </div>
+                     <div class="answer-review review-block__answer">
+                        <div class="answer-review__content">
+                           <div class="d-flex align-items-center justify-content-between answer-review__line">
+                              <div class="answer-review__name">Генадий</div>
+                              <time datetime="2022-09">21 октября 2022</time>
+                           </div>
+                           <p class="answer-review__text">Явно не для начинающих.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </article>
+         </div>
+      </div>
+   </div>
+</div>
 </body>
+
 </html>

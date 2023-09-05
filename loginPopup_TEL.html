@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="Школа будущих мам Фірма «Антошка»">
+		<title>login popup</title>
+		<script defer="defer" src="js/jguery.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/select2.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/bootstrap.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/header.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/footer.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/product.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/popup.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/functions.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/delivery.min.js?_v=20230905175412"></script>
+
+		<link rel="stylesheet" href="css/delivery.min.css?_v=20230905175412">
+		<link rel="preload" as="image" href="img/buttontotop/uph.svg">
+		<link rel="stylesheet" href="css/loginpopup.min.css?_v=20230905175412">
+	</head>
+	<body>
+		<div class="content__1">
+			<div class="login">
+				<div class="login__inner">
+					<div class="login__heading">
+						<h2 class="login__heading-title">Вход в личный кабинет</h2>
+						<img class="login__heading-close" src="./img/loginPopup/icons/close-ico.svg" alt="close icon">
+					</div>
+					<div class="login__content">
+						<div class="field">
+							<input type="text" placeholder="Телефон" id="telephone" autocomplete="off" data-validation="tel">
+							<span>Телефон</span>
+							<div class="success"></div>
+							<div class="error"></div>
+							<p>Введите свой номер телефона в правильном формате</p>
+						</div>
+						<div class="login__content-wrapper">
+							<button class="auth_next" type="button" disabled="disabled">Далее</button>
+						</div>
+					</div>
+					<div class="login__footer">
+						<a class="login__footer-link" href="#">Регистрация для новых пользователей</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content__3">
+			<div class="login">
+				<div class="login__inner">
+					<div class="login__heading">
+						<h2 class="login__heading-title">Вход в личный кабинет</h2>
+						<img class="login__heading-close" src="./img/loginPopup/icons/close-ico.svg" alt="close icon">
+					</div>
+					<div class="login__content">
+						<div class="field">
+							<input type="text" placeholder="Телефон" id="telephone" autocomplete="off" data-validation="tel">
+							<span>Телефон</span>
+							<div class="success"></div>
+							<div class="error"></div>
+							<p>Введите свой номер телефона в правильном формате</p>
+						</div>
+						<div class="login__content-error">
+							<p class="login__content-error-para">
+								Пользователь с таким номером телефона не зарегистрирован. Проверьте правильность
+								ввода или перейдите на страницу
+							</p>
+							<a class="login__content-additional-link" href="#">регистрации</a>
+						</div>
+						<div class="login__content-wrapper">
+							<button class="auth_next" type="button" disabled="disabled">Далее</button>
+						</div>
+					</div>
+					<div class="login__footer">
+						<a class="login__footer-link" href="#">Регистрация для новых пользователей</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			const telephoneInput = document.getElementById('telephone');
+			const authBtn = document.querySelector('.auth_next');
+			telephoneInput.addEventListener('keyup', (event) => {
+				const successImg = document.querySelector('.success');
+				const successImgStyles = window.getComputedStyle(successImg);
+				if (successImgStyles.getPropertyValue('display') === 'block') {
+					authBtn.disabled = false;
+				} else {
+					authBtn.disabled = true;
+				}
+			});
+		</script>
+	</body>
+</html>

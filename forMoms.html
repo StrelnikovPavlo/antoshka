@@ -6,20 +6,20 @@
 		<meta name="format-detection" content="telephone=no">
 		<meta name="description" content="Школа будущих мам Фірма «Антошка»">
 		<title>Школа будущих мам</title>
-		<script defer="defer" src="js/jguery.min.js?_v=20230904081831"></script>
+		<script defer="defer" src="js/jguery.min.js?_v=20230905175412"></script>
 		
 		
-		<script defer="defer" src="js/select2.min.js?_v=20230904081831"></script>
-		<script defer="defer" src="js/bootstrap.min.js?_v=20230904081831"></script>
-		<script defer="defer" src="js/header.min.js?_v=20230904081831"></script>
-		<script defer="defer" src="js/footer.min.js?_v=20230904081831"></script>
-		<script defer="defer" src="js/product.min.js?_v=20230904081831"></script>
-		<script defer="defer" src="js/popup.min.js?_v=20230904081831"></script>
-		<script defer="defer" src="js/functions.min.js?_v=20230904081831"></script>
-		<script defer="defer" src="js/delivery.min.js?_v=20230904081831"></script>
-		<link rel="stylesheet" href="css/delivery.min.css?_v=20230904081831">
+		<script defer="defer" src="js/select2.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/bootstrap.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/header.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/footer.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/product.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/popup.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/functions.min.js?_v=20230905175412"></script>
+		<script defer="defer" src="js/delivery.min.js?_v=20230905175412"></script>
+		<link rel="stylesheet" href="css/delivery.min.css?_v=20230905175412">
 		<link rel="preload" as="image" href="img/buttontotop/uph.svg">
-		<link rel="stylesheet" href="css/formoms.min.css?_v=20230904081831">
+		<link rel="stylesheet" href="css/formoms.min.css?_v=20230905175412">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -365,7 +365,7 @@
 					</div>
 				</form>
 				<div class="d-flex align-items-center actions-header header__actions">
-					<a href="https://antoshka.ua/customer/account/login/" class="d-flex align-items-center text-center flex-column actions-header__item d-none d-xl-flex">
+					<a href="https://antoshka.ua/customer/account/login/" id="login-enter" class="d-flex align-items-center text-center flex-column actions-header__item d-none d-xl-flex">
 						<div class="actions-header__icon">
 							<svg class="nav-bar__item-icon">
 								<use xlink:href="img/svg/icons.svg#user"></use>
@@ -786,15 +786,17 @@
 					<a data-city-id="6" href="#" class="location__value">Львов</a>
 				</li>
 			</ul>
-			<form action="../files/header_city/city.json" class="d-flex flex-column form-location location__form">
-				<button type="button" class="text-uppercase d-block d-md-none location__button" data-close>применить</button>
-				<select class="js-example-basic-single" name="location">
-				</select>
+			<form action="https://m2amida.antoshka.ua/rest/V1/geo/city" class="d-flex flex-column form-location location__form" data-url="https://m2amida.antoshka.ua/rest/V1/geo/city">
+				<button type="button" class="text-uppercase d-block d-md-none location__button" data-close>
+					применить
+				</button>
+				<select class="js-example-basic-single" name="location"></select>
 				<div class="form-location__dropdown"></div>
 			</form>
 		</div>
 	</div>
 </div>
+
 	</body>
 	<script>
 		document.querySelector('.consult__content').addEventListener('click', (event) => {
