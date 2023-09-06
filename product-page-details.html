@@ -7,20 +7,20 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="description" content="Публічний договір Приватного Підприємства Торгівельна Фірма «Антошка»">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/product.min.css?_v=20230905175412">
-  <link rel="stylesheet" href="css/product/tabs.min.css?_v=20230905175412">
+  <link rel="stylesheet" href="css/product.min.css?_v=20230906162615">
+  <link rel="stylesheet" href="css/product/tabs.min.css?_v=20230906162615">
   <link rel="preload" as="image" href="img/buttontotop/uph.svg">
-  <script defer="defer" src="js/jguery.min.js?_v=20230905175412"></script>
-  <script defer="defer" src="js/slick.min.js?_v=20230905175412"></script>
-  <script defer="defer" src="js/slider_product.min.js?_v=20230905175412"></script>
-  <script defer="defer" src="js/select2.min.js?_v=20230905175412"></script>
-  <script defer="defer" src="js/bootstrap.min.js?_v=20230905175412"></script>
-  <script defer="defer" src="js/header.min.js?_v=20230905175412"></script>
-  <script defer="defer" src="js/footer.min.js?_v=20230905175412"></script>
-  <script defer="defer" src="js/product.min.js?_v=20230905175412"></script>
-  <script defer="defer" src="js/popup.min.js?_v=20230905175412"></script>
-  <script defer="defer" src="js/functions.min.js?_v=20230905175412"></script>
-  <script defer="defer" src="js/showmore.min.js?_v=20230905175412"></script>
+  <script defer="defer" src="js/jguery.min.js?_v=20230906162615"></script>
+  <script defer="defer" src="js/slick.min.js?_v=20230906162615"></script>
+  <script defer="defer" src="js/slider_product.min.js?_v=20230906162615"></script>
+  <script defer="defer" src="js/select2.min.js?_v=20230906162615"></script>
+  <script defer="defer" src="js/bootstrap.min.js?_v=20230906162615"></script>
+  <script defer="defer" src="js/header.min.js?_v=20230906162615"></script>
+  <script defer="defer" src="js/footer.min.js?_v=20230906162615"></script>
+  <script defer="defer" src="js/product.min.js?_v=20230906162615"></script>
+  <script defer="defer" src="js/popup.min.js?_v=20230906162615"></script>
+  <script defer="defer" src="js/functions.min.js?_v=20230906162615"></script>
+  <script defer="defer" src="js/showmore.min.js?_v=20230906162615"></script>
 </head>
 
 <body>
@@ -559,9 +559,9 @@
     </table>
   </div>
   <div class="d-flex flex-wrap align-items-sm-center characteristics-product__actions">
-    <a href="#" class="characteristics-product__more characteristics-product__more-mistakes">
+    <button class="characteristics-product__more characteristics-product__more-mistakes" id="issuePopupToggle">
       <span class="info-product__label">Нашли ошибку в описании?</span>
-    </a>
+    </button>
     <a href="#" download class="characteristics-product__more characteristics-product__more-instruction">
       <span class="info-product__label">Скачать инструкцию</span>
     </a>
@@ -1231,6 +1231,30 @@
 	</div>
 </footer>
 </div>
+<div id="issuePopup" class="issue-popup">
+  <div class="d-flex align-items-center flex-column justify-content-start popup-content">
+    <div class="d-flex align-items-center popup-content__top">
+      <h1>Сообщить об ошибке</h1>
+      <span class="close-modal"></span>
+    </div>
+    <div class="align-items-center flex-column popup-content__bottom">
+      <div class="field">
+        <textarea name="issue" id="issueContent" placeholder="Описание ошибки" maxlength="1000"></textarea>
+        <span>Описание ошибки</span>
+        <div id="charCount" class="d-flex align-items-center"><span id="currentChars"></span>/<span id="maxChars"></span></div>
+      </div>
+      <button type="button" class="send-issue">Отправить</button>
+    </div>
+    <div class="align-items-center flex-column popup-content__success">
+      <div class="issue-img"></div>
+      <div class="d-flex align-items-center flex-column info">
+        <h1>Ваше сообщение успешно отправлено!</h1>
+        <h2>Мы исправим найденную ошибку как можно скорее</h2>
+        <button type="button" class="ok">ОК!</button>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="location-popup popup" id="location">
 	<div class="location popup-content">
 		<button data-close type="button" class="modal-button-close location__close">
@@ -1260,7 +1284,7 @@
 					<a data-city-id="6" href="#" class="location__value">Львов</a>
 				</li>
 			</ul>
-			<form action="https://m2amida.antoshka.ua/rest/V1/geo/city" class="d-flex flex-column form-location location__form" data-url="https://m2amida.antoshka.ua/rest/V1/geo/city">
+			<form action="https://antoshka:stage17x@m2amida.antoshka.ua/rest/V1/geo/city/" class="d-flex flex-column form-location location__form" data-url="https://antoshka:stage17x@m2amida.antoshka.ua/rest/V1/geo/city/">
 				<button type="button" class="text-uppercase d-block d-md-none location__button" data-close>
 					применить
 				</button>
